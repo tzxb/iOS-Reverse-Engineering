@@ -1,0 +1,37 @@
+
+<style>
+    .by_a {
+        color:#007aff;
+        text-decoration:none;
+    }
+</style>
+<script type="text/javascript">
+function addClick(){
+    var as = document.getElementsByTagName('a');
+    if (as.lenth == 0) {
+        return;
+    };
+    for (var i = as.length - 1; i >= 0; i--) {
+        var a = as[i];
+        var data = a.getAttribute('data');
+        if (!data) {
+            continue;
+        };
+        a.setAttribute('href','javascript:void(0);')
+        a.setAttribute('onclick','clickA(this)');
+        a.setAttribute('class', a.className + ' by_a');
+    };
+}
+function clickA(a) {
+    var data = a.getAttribute('data');
+    if (!data) {
+        return;
+    };
+    if (typeof(__bridge) == 'undefined') {
+        return;
+    }
+    __bridge.handleATagData(data);
+    
+}
+addClick();
+</script>

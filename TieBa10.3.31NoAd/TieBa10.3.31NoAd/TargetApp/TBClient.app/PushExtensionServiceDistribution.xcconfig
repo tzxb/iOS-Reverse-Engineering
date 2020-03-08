@@ -1,0 +1,12 @@
+//
+//  PushExtensionDistribution.xcconfig
+//  TBClient
+//
+//  Created by Wu,Xinting on 2017/12/5.
+//  Copyright © 2017年 baidu. All rights reserved.
+//
+PROVISIONING_PROFILE = 97f73db0-4392-4f04-90a3-cc3d9efa6f56
+
+PRODUCT_BUNDLE_IDENTIFIER = com.baidu.tieba.TBClientPushServiceExtension
+
+CODE_SIGN_IDENTITY = iPhone Distribution: Beijing Baidu Netcom Science & Technology Co.,Ltd (B83JBVZ6M5)

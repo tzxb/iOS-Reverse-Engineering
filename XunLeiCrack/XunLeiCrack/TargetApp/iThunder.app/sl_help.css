@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* @author -------- cued.xunlei.com - Baeor Huang huangwanfang@xunlei.com
+ * @time   -------- 2012
+ * @type   -------- sl_get apk style */
+html,body,div,h1,h2,h3,h4,h5,h6,p,span,em,cite,del,a,img,ul,li,ol,dl,dt,dd,fieldset,legend,form,input,button,textarea,header,section,footer,article,nav,aside,adress,menu,figure,figcaption{margin:0;padding:0;outline:none}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+ul{list-style:none}
+fieldset,img{border:0}
+header,section,footer,article,nav,aside,adress,menu{display:block}
+label{cursor:pointer}
+/*html,body{overflow:hidden;}
+.version{margin-top:-200px}*/
+html{-webkit-text-size-adjust:none;}
+body{text-align:left;font:30px/1.5 Helvetica,Tahoma,Arial,\534E\6587\7EC6\9ED1,\5FAE\8F6F\96C5\9ED1,sans-serif;color:#535353;background:#F5F5F5;overflow-x:hidden;word-wrap:break-word}
+a{text-decoration:none;color:#0781CA;outline:none}
+a,button,button:active{-webkit-tap-highlight-color:rgba(0,0,0,0)}
+body{padding:0.6em;background-color:#F4F4F4}
+img{display:block;width:100%;}
+.box_item{position:relative;background-color:#FFFFFF;padding:0.3em 0.8em 0.8em;-webkit-box-shadow:1px 0 3px rgba(0,0,0,0.1);margin-bottom:0.6em}
+.box_item h1{font-size:1.2em;padding:0.25em 0 0.25em 0.83em;color:#333333}
+.pai_help .box_item{padding-top:0.8em}
+.pai_help .box_item:after{display:none;}
+.box_item:after{display:block;position:absolute;top:1.35em;left:0.8em;width:0.4em;height:0.4em;content:"";background:#5C5C5C}
+.box_item img{height:6.4em;background:#E4E4E4 url(../images/picbg100.png) no-repeat center center}
+.box_item img+p,.box_item img+ul{margin-top:0.4em}
+.box_bottom{height:3.6em;line-height:3.6;background-color:#333;}
+.box_bottom p{text-indent:0.75em;color:#fff}
+.text_item p{margin-bottom:0.4em}
+.list_page{padding:0;background:transparent;}
+.list{padding:1.2em 0.6em}
+.list li{margin-bottom:0.6em}
+.list li a{display:block;background-color:rgba(0,0,0,0.2);padding-left:0.75em;font-size:1.2em;line-height:3em;position:relative;color:#FFFFFF;}
+.list .hover,.list a:active,.list a:hover,.list li a:target{background-color:#00A6FF}
+.list a:after{display:block;position:absolute;top:50%;right:0.82em;width:0.8em;height:1.1em;margin-top:-0.5em;content:"";background:url(../images/arr_go.png) no-repeat;background-size:100%}
+.version li{position:relative;vertical-align:top;}
+.version img{margin-bottom:0.6em;height:38em;background:transparent;}
+.version .t_ver{position:absolute;bottom:7.65em;left:8.3em;color:#FFFFFF}
+.t_ver em{font:0.3em/1.4 Arial;background-color:rgba(4,144,254,0.9);padding:0 0.4em;-webkit-border-radius:2px;display:block;}
+.new-wrap{position:relative;background:#000;display:inline-block;margin:0 0 0 0.361em;}
+.new{display:inline-block;background:#0097e8;-webkit-border-radius:0.167em;font-style:italic;padding:0.277em 0.333em 0.388em 0.333em;position:absolute;top: -1.6em;font-size:0.5em;line-height: 1em}
+
+
+@media only screen and (min-device-width:541px) and (max-device-width:800px),only screen and (min-width:541px) and (max-width:800px), only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio :1.5){
+.list_item:after{background-image:url(../images/arr_go_l.png)}
+}
+/* for 1080 px width screen */
+@media only screen and (min-width:801px) and (max-width:1080px){
+body{font-size:45px}
+} 
+/* for 800 px width screen */
+@media only screen and (width:800px){
+body{font-size:33px}
+.version img{height:1273px}
+.version .t_ver{bottom:7.8em;left:8.35em}
+.t_ver em{font-size:0.26em;padding:0 0.6em}
+.box_item img{background-image:url(../images/picbg165.png)}
+}
+/* for 720 px width screen */
+@media only screen and (width:720px){
+body{font-size:30px}
+.version .t_ver{bottom:7.7em}
+.t_ver em{font-size:0.24em}
+} 
+
+/* for 640 px width screen */
+@media only screen and (device-width:640px),only screen and (width:640px){
+body{font-size:27px}
+.version img{height:1140px}
+.version .t_ver{bottom:8.55em;left:8.15em}
+.t_ver em{font-size:0.26em}
+.box_item img{background-image:url(../images/picbg100.png)}
+} 
+/* for 540 px width screen */
+@media only screen and (max-device-width:540px),only screen and (max-width:540px){
+body{font-size:22.5px}
+}
+@media only screen and (max-width:540px) and (min-width:540px) and (-webkit-min-device-pixel-ratio : 2){
+body{font-size:15px}
+}
+/* for 480 px width screen */
+@media only screen and (max-device-width:480px),only screen and (max-width:480px){
+body{font-size:20px}
+}
+/* for 320 px width screen */
+@media only screen and (max-width:320px),only screen and (max-device-width:320px){
+body{font-size:13.33px}
+.t_ver em{padding:0 0.3em}
+.t_ver em{border-radius:1px}
+}

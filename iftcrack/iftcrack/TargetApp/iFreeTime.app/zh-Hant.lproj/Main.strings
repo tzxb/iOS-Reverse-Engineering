@@ -1,0 +1,15 @@
+
+/* Class = "UIViewController"; title = "爱阅书香"; ObjectID = "SL5-uS-Nc2"; */
+"SL5-uS-Nc2.title" = "爱阅书香";
+
+/* Class = "UISearchBar"; placeholder = "请输入书名或作者名"; ObjectID = "cEF-Zc-eRA"; */
+"cEF-Zc-eRA.placeholder" = "请输入书名或作者名";
+
+/* Class = "UINavigationItem"; title = "爱阅书香"; ObjectID = "fZp-JQ-Aaq"; */
+"fZp-JQ-Aaq.title" = "爱阅书香";
+
+/* Class = "UINavigationItem"; title = "搜索"; ObjectID = "hcz-zj-HQa"; */
+"hcz-zj-HQa.title" = "搜索";
+
+/* Class = "UINavigationItem"; title = "书籍详情"; ObjectID = "jVu-Hr-51f"; */
+"jVu-Hr-51f.title" = "书籍详情";

@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DED179F23D1E93500D3BD58 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DED179E23D1E93500D3BD58 /* MDConfig.plist */; };
+		6DED17A923D1E93500D3BD58 /* libxiaomiDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6DED17A823D1E93500D3BD58 /* libxiaomiDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6DED17AE23D1E93500D3BD58 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DED17AD23D1E93500D3BD58 /* JavaScriptCore.framework */; };
+		6DED17B023D1E93500D3BD58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DED17AF23D1E93500D3BD58 /* Foundation.framework */; };
+		6DED17B223D1E93500D3BD58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DED17B123D1E93500D3BD58 /* UIKit.framework */; };
+		6DED17B723D1E93500D3BD58 /* xiaomiDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17B623D1E93500D3BD58 /* xiaomiDylib.mm */; };
+		6DED17BA23D1E93500D3BD58 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DED17B923D1E93500D3BD58 /* MDConfigManager.h */; };
+		6DED17BC23D1E93500D3BD58 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17BB23D1E93500D3BD58 /* MDConfigManager.m */; };
+		6DED17BE23D1E93500D3BD58 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DED17BD23D1E93500D3BD58 /* MDCycriptManager.h */; };
+		6DED17C023D1E93500D3BD58 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17BF23D1E93500D3BD58 /* MDCycriptManager.m */; };
+		6DED17C223D1E93500D3BD58 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DED17C123D1E93500D3BD58 /* MDMethodTrace.h */; };
+		6DED17C423D1E93500D3BD58 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17C323D1E93500D3BD58 /* MDMethodTrace.m */; };
+		6DED17C723D1E93500D3BD58 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17C623D1E93500D3BD58 /* a1a2-selectortramps-arm.s */; };
+		6DED17C923D1E93500D3BD58 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17C823D1E93500D3BD58 /* a1a2-selectortramps-arm64.s */; };
+		6DED17CB23D1E93500D3BD58 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17CA23D1E93500D3BD58 /* a1a2-selectortramps-i386.s */; };
+		6DED17CD23D1E93500D3BD58 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17CC23D1E93500D3BD58 /* a1a2-selectortramps-x86_64.s */; };
+		6DED17CF23D1E93500D3BD58 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17CE23D1E93500D3BD58 /* a2a3-selectortramps-arm.s */; };
+		6DED17D123D1E93500D3BD58 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17D023D1E93500D3BD58 /* a2a3-selectortramps-i386.s */; };
+		6DED17D323D1E93500D3BD58 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17D223D1E93500D3BD58 /* a2a3-selectortramps-x86_64.s */; };
+		6DED17D523D1E93500D3BD58 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DED17D423D1E93500D3BD58 /* OCMethodTrace.h */; };
+		6DED17D723D1E93500D3BD58 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17D623D1E93500D3BD58 /* OCMethodTrace.m */; };
+		6DED17D923D1E93500D3BD58 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DED17D823D1E93500D3BD58 /* OCSelectorTrampolines.h */; };
+		6DED17DB23D1E93500D3BD58 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17DA23D1E93500D3BD58 /* OCSelectorTrampolines.mm */; };
+		6DED17DF23D1E93500D3BD58 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DED17DE23D1E93500D3BD58 /* LLDBTools.h */; };
+		6DED17E123D1E93500D3BD58 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17E023D1E93500D3BD58 /* LLDBTools.mm */; };
+		6DED17E623D1E93500D3BD58 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17E523D1E93500D3BD58 /* AntiAntiDebug.m */; };
+		6DED17E923D1E93500D3BD58 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17E823D1E93500D3BD58 /* fishhook.c */; };
+		6DED17EB23D1E93500D3BD58 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DED17EA23D1E93500D3BD58 /* fishhook.h */; };
+		6DED17ED23D1E93500D3BD58 /* xiaomiDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DED17EC23D1E93500D3BD58 /* xiaomiDylib.h */; };
+		6DED17EF23D1E93500D3BD58 /* xiaomiDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DED17EE23D1E93500D3BD58 /* xiaomiDylib.m */; };
+		6DED17F923D1E95600D3BD58 /* 小蜜影视.ipa in Resources */ = {isa = PBXBuildFile; fileRef = 6DED17F823D1E95600D3BD58 /* 小蜜影视.ipa */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DED17AA23D1E93500D3BD58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DED178C23D1E93500D3BD58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DED17A723D1E93500D3BD58;
+			remoteInfo = xiaomiDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6DED179423D1E93500D3BD58 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6DED17A923D1E93500D3BD58 /* libxiaomiDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6DED179723D1E93500D3BD58 /* xiaomi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xiaomi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DED179A23D1E93500D3BD58 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		6DED179C23D1E93500D3BD58 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
+		6DED179E23D1E93500D3BD58 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MDConfig.plist; sourceTree = "<group>"; };
+		6DED17A123D1E93500D3BD58 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; path = "put ipa or app here"; sourceTree = "<group>"; };
+		6DED17A223D1E93500D3BD58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DED17A823D1E93500D3BD58 /* libxiaomiDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libxiaomiDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DED17AD23D1E93500D3BD58 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		6DED17AF23D1E93500D3BD58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6DED17B123D1E93500D3BD58 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6DED17B523D1E93500D3BD58 /* xiaomiDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = xiaomiDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		6DED17B623D1E93500D3BD58 /* xiaomiDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = xiaomiDylib.mm; sourceTree = "<group>"; };
+		6DED17B923D1E93500D3BD58 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		6DED17BB23D1E93500D3BD58 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		6DED17BD23D1E93500D3BD58 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		6DED17BF23D1E93500D3BD58 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		6DED17C123D1E93500D3BD58 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		6DED17C323D1E93500D3BD58 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		6DED17C623D1E93500D3BD58 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		6DED17C823D1E93500D3BD58 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		6DED17CA23D1E93500D3BD58 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		6DED17CC23D1E93500D3BD58 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		6DED17CE23D1E93500D3BD58 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		6DED17D023D1E93500D3BD58 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		6DED17D223D1E93500D3BD58 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		6DED17D423D1E93500D3BD58 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		6DED17D623D1E93500D3BD58 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		6DED17D823D1E93500D3BD58 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		6DED17DA23D1E93500D3BD58 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		6DED17DC23D1E93500D3BD58 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		6DED17DE23D1E93500D3BD58 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		6DED17E023D1E93500D3BD58 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		6DED17E323D1E93500D3BD58 /* xiaomiDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "xiaomiDylib-Prefix.pch"; path = "../xiaomiDylib-Prefix.pch"; sourceTree = "<group>"; };
+		6DED17E523D1E93500D3BD58 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		6DED17E823D1E93500D3BD58 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		6DED17EA23D1E93500D3BD58 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		6DED17EC23D1E93500D3BD58 /* xiaomiDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xiaomiDylib.h; sourceTree = "<group>"; };
+		6DED17EE23D1E93500D3BD58 /* xiaomiDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xiaomiDylib.m; sourceTree = "<group>"; };
+		6DED17F823D1E95600D3BD58 /* 小蜜影视.ipa */ = {isa = PBXFileReference; lastKnownFileType = file; path = "小蜜影视.ipa"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DED179123D1E93500D3BD58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DED17A523D1E93500D3BD58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DED17AE23D1E93500D3BD58 /* JavaScriptCore.framework in Frameworks */,
+				6DED17B223D1E93500D3BD58 /* UIKit.framework in Frameworks */,
+				6DED17B023D1E93500D3BD58 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DED178B23D1E93400D3BD58 = {
+			isa = PBXGroup;
+			children = (
+				6DED179923D1E93500D3BD58 /* xiaomi */,
+				6DED17B323D1E93500D3BD58 /* xiaomiDylib */,
+				6DED17AC23D1E93500D3BD58 /* Frameworks */,
+				6DED179823D1E93500D3BD58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DED179823D1E93500D3BD58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DED179723D1E93500D3BD58 /* xiaomi.app */,
+				6DED17A823D1E93500D3BD58 /* libxiaomiDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DED179923D1E93500D3BD58 /* xiaomi */ = {
+			isa = PBXGroup;
+			children = (
+				6DED179A23D1E93500D3BD58 /* icon.png */,
+				6DED17A223D1E93500D3BD58 /* Info.plist */,
+				6DED179B23D1E93500D3BD58 /* Scripts */,
+				6DED179D23D1E93500D3BD58 /* Config */,
+				6DED17A023D1E93500D3BD58 /* TargetApp */,
+			);
+			path = xiaomi;
+			sourceTree = "<group>";
+		};
+		6DED179B23D1E93500D3BD58 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				6DED179C23D1E93500D3BD58 /* quick-resign.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		6DED179D23D1E93500D3BD58 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6DED179E23D1E93500D3BD58 /* MDConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6DED17A023D1E93500D3BD58 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				6DED17A123D1E93500D3BD58 /* put ipa or app here */,
+				6DED17F823D1E95600D3BD58 /* 小蜜影视.ipa */,
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		6DED17AC23D1E93500D3BD58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DED17AD23D1E93500D3BD58 /* JavaScriptCore.framework */,
+				6DED17AF23D1E93500D3BD58 /* Foundation.framework */,
+				6DED17B123D1E93500D3BD58 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DED17B323D1E93500D3BD58 /* xiaomiDylib */ = {
+			isa = PBXGroup;
+			children = (
+				6DED17EC23D1E93500D3BD58 /* xiaomiDylib.h */,
+				6DED17EE23D1E93500D3BD58 /* xiaomiDylib.m */,
+				6DED17B423D1E93500D3BD58 /* Logos */,
+				6DED17B823D1E93500D3BD58 /* Config */,
+				6DED17C523D1E93500D3BD58 /* Trace */,
+				6DED17DD23D1E93500D3BD58 /* Tools */,
+				6DED17E423D1E93500D3BD58 /* AntiAntiDebug */,
+				6DED17E723D1E93500D3BD58 /* fishhook */,
+				6DED17E223D1E93500D3BD58 /* Supporting Files */,
+			);
+			path = xiaomiDylib;
+			sourceTree = "<group>";
+		};
+		6DED17B423D1E93500D3BD58 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				6DED17B523D1E93500D3BD58 /* xiaomiDylib.xm */,
+				6DED17B623D1E93500D3BD58 /* xiaomiDylib.mm */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		6DED17B823D1E93500D3BD58 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6DED17B923D1E93500D3BD58 /* MDConfigManager.h */,
+				6DED17BB23D1E93500D3BD58 /* MDConfigManager.m */,
+				6DED17BD23D1E93500D3BD58 /* MDCycriptManager.h */,
+				6DED17BF23D1E93500D3BD58 /* MDCycriptManager.m */,
+				6DED17C123D1E93500D3BD58 /* MDMethodTrace.h */,
+				6DED17C323D1E93500D3BD58 /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6DED17C523D1E93500D3BD58 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				6DED17C623D1E93500D3BD58 /* a1a2-selectortramps-arm.s */,
+				6DED17C823D1E93500D3BD58 /* a1a2-selectortramps-arm64.s */,
+				6DED17CA23D1E93500D3BD58 /* a1a2-selectortramps-i386.s */,
+				6DED17CC23D1E93500D3BD58 /* a1a2-selectortramps-x86_64.s */,
+				6DED17CE23D1E93500D3BD58 /* a2a3-selectortramps-arm.s */,
+				6DED17D023D1E93500D3BD58 /* a2a3-selectortramps-i386.s */,
+				6DED17D223D1E93500D3BD58 /* a2a3-selectortramps-x86_64.s */,
+				6DED17D423D1E93500D3BD58 /* OCMethodTrace.h */,
+				6DED17D623D1E93500D3BD58 /* OCMethodTrace.m */,
+				6DED17D823D1E93500D3BD58 /* OCSelectorTrampolines.h */,
+				6DED17DA23D1E93500D3BD58 /* OCSelectorTrampolines.mm */,
+				6DED17DC23D1E93500D3BD58 /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		6DED17DD23D1E93500D3BD58 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6DED17DE23D1E93500D3BD58 /* LLDBTools.h */,
+				6DED17E023D1E93500D3BD58 /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		6DED17E223D1E93500D3BD58 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DED17E323D1E93500D3BD58 /* xiaomiDylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DED17E423D1E93500D3BD58 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				6DED17E523D1E93500D3BD58 /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		6DED17E723D1E93500D3BD58 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				6DED17E823D1E93500D3BD58 /* fishhook.c */,
+				6DED17EA23D1E93500D3BD58 /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6DED17A623D1E93500D3BD58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DED17BE23D1E93500D3BD58 /* MDCycriptManager.h in Headers */,
+				6DED17C223D1E93500D3BD58 /* MDMethodTrace.h in Headers */,
+				6DED17EB23D1E93500D3BD58 /* fishhook.h in Headers */,
+				6DED17DF23D1E93500D3BD58 /* LLDBTools.h in Headers */,
+				6DED17BA23D1E93500D3BD58 /* MDConfigManager.h in Headers */,
+				6DED17D923D1E93500D3BD58 /* OCSelectorTrampolines.h in Headers */,
+				6DED17ED23D1E93500D3BD58 /* xiaomiDylib.h in Headers */,
+				6DED17D523D1E93500D3BD58 /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6DED179623D1E93500D3BD58 /* xiaomi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DED17F523D1E93500D3BD58 /* Build configuration list for PBXNativeTarget "xiaomi" */;
+			buildPhases = (
+				6DED179023D1E93500D3BD58 /* Sources */,
+				6DED179123D1E93500D3BD58 /* Frameworks */,
+				6DED179223D1E93500D3BD58 /* ShellScript */,
+				6DED179323D1E93500D3BD58 /* Resources */,
+				6DED179423D1E93500D3BD58 /* CopyFiles */,
+				6DED179523D1E93500D3BD58 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DED17AB23D1E93500D3BD58 /* PBXTargetDependency */,
+			);
+			name = xiaomi;
+			productName = xiaomi;
+			productReference = 6DED179723D1E93500D3BD58 /* xiaomi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DED17A723D1E93500D3BD58 /* xiaomiDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DED17F223D1E93500D3BD58 /* Build configuration list for PBXNativeTarget "xiaomiDylib" */;
+			buildPhases = (
+				6DED17A323D1E93500D3BD58 /* ShellScript */,
+				6DED17A423D1E93500D3BD58 /* Sources */,
+				6DED17A523D1E93500D3BD58 /* Frameworks */,
+				6DED17A623D1E93500D3BD58 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xiaomiDylib;
+			productName = xiaomiDylib;
+			productReference = 6DED17A823D1E93500D3BD58 /* libxiaomiDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DED178C23D1E93500D3BD58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "排骨";
+				TargetAttributes = {
+					6DED179623D1E93500D3BD58 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					6DED17A723D1E93500D3BD58 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 6DED178F23D1E93500D3BD58 /* Build configuration list for PBXProject "xiaomi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DED178B23D1E93400D3BD58;
+			productRefGroup = 6DED179823D1E93500D3BD58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DED179623D1E93500D3BD58 /* xiaomi */,
+				6DED17A723D1E93500D3BD58 /* xiaomiDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DED179323D1E93500D3BD58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DED17F923D1E95600D3BD58 /* 小蜜影视.ipa in Resources */,
+				6DED179F23D1E93500D3BD58 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DED179223D1E93500D3BD58 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		6DED179523D1E93500D3BD58 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		6DED17A323D1E93500D3BD58 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DED179023D1E93500D3BD58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DED17A423D1E93500D3BD58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DED17C023D1E93500D3BD58 /* MDCycriptManager.m in Sources */,
+				6DED17EF23D1E93500D3BD58 /* xiaomiDylib.m in Sources */,
+				6DED17C923D1E93500D3BD58 /* a1a2-selectortramps-arm64.s in Sources */,
+				6DED17C723D1E93500D3BD58 /* a1a2-selectortramps-arm.s in Sources */,
+				6DED17CD23D1E93500D3BD58 /* a1a2-selectortramps-x86_64.s in Sources */,
+				6DED17D723D1E93500D3BD58 /* OCMethodTrace.m in Sources */,
+				6DED17BC23D1E93500D3BD58 /* MDConfigManager.m in Sources */,
+				6DED17E923D1E93500D3BD58 /* fishhook.c in Sources */,
+				6DED17E623D1E93500D3BD58 /* AntiAntiDebug.m in Sources */,
+				6DED17DB23D1E93500D3BD58 /* OCSelectorTrampolines.mm in Sources */,
+				6DED17CB23D1E93500D3BD58 /* a1a2-selectortramps-i386.s in Sources */,
+				6DED17D123D1E93500D3BD58 /* a2a3-selectortramps-i386.s in Sources */,
+				6DED17CF23D1E93500D3BD58 /* a2a3-selectortramps-arm.s in Sources */,
+				6DED17B723D1E93500D3BD58 /* xiaomiDylib.mm in Sources */,
+				6DED17E123D1E93500D3BD58 /* LLDBTools.mm in Sources */,
+				6DED17D323D1E93500D3BD58 /* a2a3-selectortramps-x86_64.s in Sources */,
+				6DED17C423D1E93500D3BD58 /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DED17AB23D1E93500D3BD58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DED17A723D1E93500D3BD58 /* xiaomiDylib */;
+			targetProxy = 6DED17AA23D1E93500D3BD58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6DED17F023D1E93500D3BD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6DED17F123D1E93500D3BD58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DED17F323D1E93500D3BD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xiaomiDylib/xiaomiDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libxiaomiDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"xiaomiDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		6DED17F423D1E93500D3BD58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "xiaomiDylib/xiaomiDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libxiaomiDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"xiaomiDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DED17F623D1E93500D3BD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = xiaomi/Info.plist;
+				MARKETING_VERSION = 1.2.0;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				MONKEYDEV_TARGET_APP = "小蜜影视";
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paigu.xiaomi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DED17F723D1E93500D3BD58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = xiaomi/Info.plist;
+				MARKETING_VERSION = 1.2.0;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				MONKEYDEV_TARGET_APP = "小蜜影视";
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paigu.xiaomi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DED178F23D1E93500D3BD58 /* Build configuration list for PBXProject "xiaomi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DED17F023D1E93500D3BD58 /* Debug */,
+				6DED17F123D1E93500D3BD58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DED17F223D1E93500D3BD58 /* Build configuration list for PBXNativeTarget "xiaomiDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DED17F323D1E93500D3BD58 /* Debug */,
+				6DED17F423D1E93500D3BD58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DED17F523D1E93500D3BD58 /* Build configuration list for PBXNativeTarget "xiaomi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DED17F623D1E93500D3BD58 /* Debug */,
+				6DED17F723D1E93500D3BD58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DED178C23D1E93500D3BD58 /* Project object */;
+}

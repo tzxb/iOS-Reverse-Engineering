@@ -1,0 +1,103 @@
+;(function() {
+         if (window.XLJSWebViewBridge) { return }
+         var uniqueId = 1;
+         var responseCallbacks = {};
+         var serviceNameToHandlers= {};
+        //handler = function (dataJSON,callback)
+        function registerMessageListener(serviceName,handler){
+            serviceNameToHandlers[serviceName] = handler;
+        }
+         // responseCallback 参数为 JSON 对象
+         function sendMessage (serviceName,dataJSON,responseCallback){
+            var message={};
+            if (!serviceName) {
+                alert('serviceName 必须要传入值');
+                return;
+            };
+            message["_serviceName_"] = serviceName;
+            if (dataJSON) {
+                message["_data_"] = dataJSON;
+            };
+            if (responseCallback) {
+                var callbackUid = _createUniqueCallbackID();
+                responseCallbacks[callbackUid] = responseCallback;
+                message["_callbackID_"]=callbackUid;
+            };
+            
+            _doSendMessage(message);
+         }
+
+         //统一处理从OC来的消息
+         function _handleMessageFromOC (message){
+            window.setTimeout(function () {
+                var responseID = message["_responseID_"];
+                if (responseID) {
+                    _handleResponseMessage(message);
+                }else{
+                    _handleNormalMessage(message);
+                }
+            },0);
+        }
+        function _handleNormalMessage(message){
+            var serviceName = message["_serviceName_"];
+            var callbackID =  message["_callbackID_"];
+            var dataJSON = message["_data_"];
+            var handler = serviceNameToHandlers[serviceName];
+            if (!handler) {return};
+            if (callbackID) {
+                handler(dataJSON,function(responseData){
+                    var rspMessage = {};
+                    if (responseData) {
+                        rspMessage["_data_"]=responseData;
+                    };
+                    rspMessage["_responseID_"]=callbackID;
+                    _doSendMessage(rspMessage);
+                });
+            }else{
+            handler(dataJSON,null);
+            }
+        }
+        function _handleResponseMessage(message){
+            var responseID = message["_responseID_"];
+            var responseData = message["_data_"];
+
+            var rspCallBack = responseCallbacks[responseID];
+            if (rspCallBack) {
+                rspCallBack(responseData);
+                delete responseCallbacks[responseID];
+            };
+        }
+        function _createUniqueCallbackID(){
+            var uid =  ++uniqueId;
+            var cbuid = "cbid_" + uid+'_'+new Date().getTime();
+            return cbuid;
+        }
+        function _doSendMessage (message){
+            //调起本地方法
+            //NativeExportObject.handleMessageFromJS(message);
+            window.webkit.messageHandlers.handleMessageFromJS.postMessage(message);
+         }
+
+     var doc = document;
+     var readyEvent = doc.createEvent('Events');
+     readyEvent.initEvent('XLJSWebViewBridgejsReady');
+     readyEvent.bridge = window.XLJSWebViewBridge;
+
+     window.XLJSWebViewBridge = {
+         sendMessage:sendMessage,
+         registerMessageListener:registerMessageListener,
+         _handleMessageFromOC :_handleMessageFromOC
+     };
+
+     doc.dispatchEvent(readyEvent);
+ })();
+
+
+
+
+
+
+
+
+
+

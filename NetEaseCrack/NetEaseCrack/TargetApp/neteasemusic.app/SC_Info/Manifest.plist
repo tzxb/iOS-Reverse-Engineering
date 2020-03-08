@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SinfPaths</key>
+	<array>
+		<string>SC_Info/neteasemusic.sinf</string>
+	</array>
+	<key>SinfReplicationPaths</key>
+	<array>
+		<string>PlugIns/Neteasemusic Intents.appex/SC_Info/Neteasemusic Intents.sinf</string>
+		<string>PlugIns/music NotificationService.appex/SC_Info/music NotificationService.sinf</string>
+		<string>PlugIns/music Widget.appex/SC_Info/music Widget.sinf</string>
+		<string>Watch/neteasemusic WatchKit App.app/PlugIns/neteasemusic WatchKit Extension.appex/SC_Info/neteasemusic WatchKit Extension.sinf</string>
+		<string>SC_Info/neteasemusic.sinf</string>
+	</array>
+</dict>
+</plist>

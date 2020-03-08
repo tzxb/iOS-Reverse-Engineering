@@ -1,0 +1,88 @@
+{
+	"filters":[
+	{
+		"name": "", 
+		"id": "0",
+		"file": "1-C1.png",
+		"value": "1.0",
+	},
+
+	{
+		"name": "", 
+		"id": "1",
+		"file": "2-C2.png", 
+		"value": "1.0",
+	},
+
+	{
+		"name": "", 
+		"id": "2",
+		"file": "3-C3.png", 
+		"value": "1.0",
+	},
+
+	{
+		"name": "", 
+		"id": "3",
+		"file": "4-C4.png", 
+		"value": "1.0",
+	},
+
+	{
+		"name": "", 
+		"id": "4",
+		"file": "5-S1.png", 
+		"value": "1.0",
+	},
+
+	{
+		"name": "", 
+		"id": "5",
+		"file": "6-S2.png", 
+		"value": "1.0",
+	},
+
+	{
+		"name": "", 
+		"id": "6",
+		"file": "7-S3.png", 
+		"value": "1.0",
+	},
+
+	{
+		"name": "", 
+		"id": "7",
+		"file": "8-S4.png", 
+		"value": "1.0",
+	},
+
+	{
+		"name": "", 
+		"id": "8",
+		"file": "9-D1.png", 
+		"value": "1.0",
+	},
+
+	{
+		"name": "", 
+		"id": "9",
+		"file": "10-D2.png", 
+		"value": "1.0",
+	},
+
+	{
+		"name": "", 
+		"id": "10",
+		"file": "11-B1.png", 
+		"value": "1.0",
+	},
+
+	{
+		"name": "", 
+		"id": "11",
+		"file": "12-B2.png", 
+		"value": "1.0",
+	},
+	]
+}
+

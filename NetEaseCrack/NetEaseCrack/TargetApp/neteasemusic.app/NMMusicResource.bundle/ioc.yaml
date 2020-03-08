@@ -1,0 +1,20 @@
+# 打点库
+NELogProtocol:  NMLogManager.defaultManager
+
+# app 环境库
+NEEnvironmentProtocol:  NEEnvironment.defaultEnvironment
+
+## 网络库 (临时)
+NMHttpServerProtocol: NMHttpServer.server
+
+# 换肤
+NMSkinColorListProtocols: NMSkinColorList.class
+
+# 导航
+NMNavigatorProtocol: NMNavigator.sharedInstance
+
+# host 管理
+NMIocDFSProtocol: NMDFSManager.class
+
+# ABTest
+NEABTestProtocol: NMABTestManager.defaultManager

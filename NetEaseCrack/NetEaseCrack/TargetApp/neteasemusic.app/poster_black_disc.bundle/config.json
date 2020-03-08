@@ -1,0 +1,8 @@
+{
+"name": "黑胶", 
+"disc": "videoposter_disc.png",
+"base": "videoposter_needle_base.png", 
+"needle": "videoposter_needle_needle.png", 
+"point": "videoposter_needle_point.png", 
+"version": "1.0"
+}

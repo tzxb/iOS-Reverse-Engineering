@@ -1,0 +1,6 @@
+
+PROVISIONING_PROFILE = f4e095b1-e99e-4d1c-9475-829dea6c8803
+
+CODE_SIGN_IDENTITY = iPhone Developer: 成武 李 (6WF7A85RAM)
+
+PRODUCT_BUNDLE_IDENTIFIER = com.baidu.tieba.TBClientPushServiceExtension

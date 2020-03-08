@@ -1,0 +1,97 @@
+---
+- key: FH-bodyParseFailPrintData
+  value: 6.3.2 NMHTTPServer body 解密失败打印 body
+- key: FH-mamAllLog
+  value: 6.3.2 mam sdk 日志不采样
+- key: LiveSongClose
+  value: 播放页关闭直播间x
+- key: FH-mam2.5.6
+  value: 6.3.2 mam sdk v2.5.6灰度控制
+- key: FH-playlag
+  value: 音频播放卡顿日志记录
+- key: FH-mamNetworkLowLevelRead6.3.1
+  value: 6.3.1 开启 MAM server IP 等底层s读取功能
+- key: FH-mamAutoDiagnoSickClose6.3.1
+  value: 6.3.1 关闭 MAM 自动诊断 sick 标记
+- key: comment-click
+  value: 20190801 底部footer点击评论按钮展示键盘
+- key: S-personality
+  value: 20190801搜索个性化推荐tab
+- key: LiveMorePer
+  value: 20190718 更多直播加入算法推荐
+- key: LiveListGender
+  value: 20190718 龙珠列表区分用户性别
+- key: LiveVoice326
+  value: 20190718 主播电台页三卡、我的电台页三卡，变成六卡
+- key: musicBreakOff
+  value: 6.3.1(0718)歌曲图文详情页切换歌曲不打断
+- key: DailyCalendar
+  value: 6.3.1(0801) 历史日推日历
+- key: LAdClkOnlyFloat
+  value: 6.3.1 开屏广告仅大图&视频的底部浮层可点击
+- key: videoMlogButton
+  value: 6.2.3 Mlog 视频页按钮使用靠边的排版
+- key: homepage-VIPbar
+  value: 6.2.3 首页 VIP 购买入口（bar）
+- key: FH-ajaxPreload
+  value: 6.2.3 ajax 预加载
+- key: FH-recognizeSongUseACRCloud
+  value: 6.2.2 听歌识曲识别算法使用ACRCloud
+- key: VIP-FM
+  value: 6.2.1 私人FM Vip购买引导
+- key: Vip-RecentPlay
+  value: 6.2.1单曲最近播放Vip购买引导
+- key: mypage-ad
+  value: 6.2.1我的页面广告
+- key: FH-adMonitorUA
+  value: 6.2.0第三方监控UA
+- key: httpdnsios6.2
+  value: httpdns实验
+- key: FH-audioQueueDisposeCrashFix
+  value: 6.2.0播放器NTESAudioQueue崩溃修正尝试
+- key: FH-autotracelog6.2
+  value: 6.2.0 自动打点流量归一
+- key: FH-iosclientlog3-0704
+  value: 0704三线改造clientlog
+- key: FH-iosapm3-0704
+  value: 0704三线改造apm
+- key: FH-iosinterface3-0704
+  value: 0704三线改造interface
+- key: VideoDefTabLive
+  value: 视频流tab，默认定位位置：C组推荐、直播，默认进推荐；T1组推荐、直播，默认进直播；T2组竖屏、推荐、直播，默认进推荐
+- key: FH-decodeBufferWriteOptimize
+  value: 6.1.0播放器NTESAudioDecodeBuffer优化，尝试修正aac引起的Crash率上升
+- key: FH-WKCookie6.3.2
+  value: 开启 WKWebView Cookie 同步
+- key: FH-mnp-WKForce6.2.2
+  value: 小程序强制使用 WKWebView
+- key: FH-WKForceWhitelist
+  value: WKWebView 白名单强制命中全部页面
+- key: FH-WKForce6.3.2
+  value: 强制使用 WKWebView
+- key: HomeLivePer
+  value: 6.1.0圆圈小首页算法分组
+- key: float-refresh-2
+  value: 6.0首页feed刷新
+- key: FH-ipScoreApiServer6.2.1
+  value: 6.2.1IP跑马主站
+- key: FH-ipScorePic6.2.1
+  value: 6.2.1IP跑马图片
+- key: FH-ipScoreMusic6.2.1
+  value: 6.2.1IP跑马音频
+- key: FH-ZXingSDKDis
+  value: 禁用 ZXing
+- key: FH-videoPlayer4
+  value: 6.2 视频播放器替换为新的
+- key: xindongbutton
+  value: 5.9心动模式入口按钮刷新推荐列表
+- key: FH-audioPlayCacheOptimize
+  value: 音频播放缓存优化
+- key: closeFMpreload
+  value: 5.9关闭私人FM启动预加载
+- key: videobox-new
+  value: 5.9.0 视频盒子入口ab
+- key: FH-miniappsSDK
+  value: 小程序SDK开关
+- key: ClassicalTopic
+  value: 古典专区入口

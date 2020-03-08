@@ -1,0 +1,28 @@
+/* 
+ BBAUserSettingLocalizable.strings
+ 
+ 
+ Created by baidu on 18-4-12.
+
+*/
+
+// 收货地址
+"StringNewCreateAddressTitle"                 = "新建地址";
+"StringEditAddressTitle"                      = "修改地址";
+"StringeSelectAddressTitle"                   = "选择收货地址";
+"StringContactNameTitle"                      = "收货人";
+"StringContactTelTitle"                       = "联系电话";
+"StringContactAddressTitle"                   = "所在地区";
+"StringContactDetailAddressTitle"             = "详细地址";
+"StringContactZipCodeTitle"                   = "邮政编码";
+"StringContactNameTip"                        = "收货人（必填）";
+"StringContactTelTip"                         = "手机号码（必填）";
+"StringContactAddressTip"                     = "地区选择（必填）";
+"StringContactDetailAddressTip"               = "街道门牌号信息（必填）";
+"StringContactZipCodeTip"                     = "邮政编码";
+"StringContactCancelTitle"                    = "取消";
+"StringContactSaveTitle"                      = "保存";
+"StringMenuAboutMNP"                          = "关于";
+"StringMenuAuthorityMNP"                      = "权限管理";
+"StringMenuGoHomeMNP"                         = "小程序首页";
+"StringMenuShareMNP"                          = "分享";

@@ -1,0 +1,98 @@
+# routers 配置问题说明
+#
+# targets 唯一确定一个控制器(需要和 android 统一) 命名规则如下：
+# 软件命名空间/业务线命名空间/控制器描述 => app/pod/desc
+# 例如 网易云音乐内部的浏览器 NMWebBrowserViewController
+# 网易云音乐命名空间/基础业务线/浏览器 => nm/base/webview
+#
+# navigateType 绑定被打开的方式 支持 push | pushWithTab | modal
+#
+# desc: 该控制器的一段描述 调试和出错情况下会使用到
+
+NMDiscoverDjViewController:
+  targets:
+    - discovery/djradio
+  navigateType:
+    pushWithTab
+  desc:
+    电台发现页
+
+NMWebBrowserViewController:
+  targets:
+    - nm/base/webview
+  desc:
+    浏览器
+
+NMScanViewController:
+  targets:
+    - nm/base/scan
+  desc:
+    扫一扫
+
+NMMusicianSayingSelectFriendsViewController:
+  targets:
+    - nm/comment/musicianSaidInvite
+  desc:
+    音乐人邀请联系人
+
+NMSatiViewController:
+  targets:
+    - nm/sati/entry
+  desc:
+    正念模式入口
+
+NMDailySongOrderViewController:
+  targets:
+    - nm/daily/songOrder
+  desc:
+    日推点歌台详情页，需要参数 id，点歌的 ID
+
+NMNetworkDiagnoseViewController:
+  targets:
+    - nm/tools/network_diagnose
+  desc:
+    工具, 网络检测工具
+
+NMSquareVideoDetailViewController:
+  targets:
+    - nm/MLog/videoDetail
+  desc:
+    MLog 视频详情页
+
+NMSquareImageDetailViewController:
+  targets:
+    - nm/MLog/imageDetail
+  desc:
+    MLog 图文详情页
+
+NMNewDiscoverToplistViewController:
+  targets:
+    - discovery/songrank
+  navigateType:
+    pushWithTab
+  desc:
+    打开歌曲排行榜
+
+NMSquareHotCommentViewController:
+  targets:
+    - nm/square/hotCommentWall
+  desc:
+    广场 热评墙页
+
+NMSquareTopicGroupViewController:
+  targets:
+    - nm/MLog/feedTopic
+  desc:
+    广场主题聚合页，quary：话题 id（必填）：nm/MLog/feedTopic?id=xxx
+
+NMSquareLocationGroupViewController:
+  targets:
+    - nm/MLog/feedGeo
+  desc:
+    广场地理位置聚合页，quary：位置 id（必填）：id=xxx
+
+NMSquareSongGroupViewController:
+  targets:
+    - nm/MLog/feedMusic
+  desc:
+    广场歌曲聚合页，quary：歌曲 id（必填）：nm/MLog/feedMusic?id=xxx

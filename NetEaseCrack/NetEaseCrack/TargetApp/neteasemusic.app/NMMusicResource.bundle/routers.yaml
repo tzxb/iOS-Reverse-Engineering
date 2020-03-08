@@ -1,0 +1,17 @@
+# routers 配置问题说明
+#
+# targets 唯一确定一个控制器(需要和 android 统一) 命名规则如下：
+# 软件命名空间/业务线命名空间/控制器描述 => app/pod/desc
+# 例如 网易云音乐内部的浏览器 NMWebBrowserViewController
+# 网易云音乐命名空间/基础业务线/浏览器 => nm/base/webview
+#
+# targets 为数组，是为了兼容老的协议以及 android 的协议
+#
+# desc: 该控制器的一段描述 调试和出错情况下会使用到
+
+# NMWebBrowserViewController:
+#     targets:
+#         - openurl
+#         - nm/base/webview
+#     desc:
+#         浏览器

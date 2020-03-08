@@ -1,0 +1,37 @@
+[{
+    "summary": "6->陆",
+    "rule": "(?<!\\d)6(?=[地离续])|(?<=[大着内])6 @=>陆"
+},
+{
+    "summary": "chou->春",
+    "rule": "chou(?=[天风雨季雷])|chou(?=[如]) @=>春"
+},
+{
+    "summary": "dong->洞",
+    "rule": "(?<=[空漏])dong @=>洞"
+},
+{
+    "summary": "hua->花",
+    "rule": "(?<=[心浪水])hua|hua(?=[样式开椒招]) @=>花"
+},
+{
+    "summary": "hun->魂",
+    "rule": "(?<=[精灵])hun|hun(?=魄) @=>魂"
+},
+{
+    "summary": "huo->惑",
+    "rule": "(?<=[迷困疑蛊所])huo @=>惑"
+},
+{
+    "summary": "mén->门",
+    "rule": "mén @=>门"
+},
+{
+    "summary": "zhèng->正",
+    "rule": "(?<=[真])zhèng @=>正"
+},
+{
+    "summary": "zhù->助",
+    "rule": "(?<=[求帮])zhù @=>助"
+}
+]

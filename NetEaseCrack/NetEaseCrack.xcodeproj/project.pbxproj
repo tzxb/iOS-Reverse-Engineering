@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D38DA6623BE1E64003A6C4E /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D38DA6523BE1E64003A6C4E /* Images-2.xcassets */; };
+		6DE75CD523BE18B6003E67BF /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DE75CD423BE18B6003E67BF /* MDConfig.plist */; };
+		6DE75CDF23BE18B6003E67BF /* libNetEaseCrackDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6DE75CDE23BE18B6003E67BF /* libNetEaseCrackDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6DE75CE423BE18B6003E67BF /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE75CE323BE18B6003E67BF /* JavaScriptCore.framework */; };
+		6DE75CE623BE18B6003E67BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE75CE523BE18B6003E67BF /* Foundation.framework */; };
+		6DE75CE823BE18B6003E67BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE75CE723BE18B6003E67BF /* UIKit.framework */; };
+		6DE75CED23BE18B6003E67BF /* NetEaseCrackDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75CEC23BE18B6003E67BF /* NetEaseCrackDylib.mm */; };
+		6DE75CF023BE18B6003E67BF /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE75CEF23BE18B6003E67BF /* MDConfigManager.h */; };
+		6DE75CF223BE18B6003E67BF /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75CF123BE18B6003E67BF /* MDConfigManager.m */; };
+		6DE75CF423BE18B6003E67BF /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE75CF323BE18B6003E67BF /* MDCycriptManager.h */; };
+		6DE75CF623BE18B6003E67BF /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75CF523BE18B6003E67BF /* MDCycriptManager.m */; };
+		6DE75CF823BE18B6003E67BF /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE75CF723BE18B6003E67BF /* MDMethodTrace.h */; };
+		6DE75CFA23BE18B6003E67BF /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75CF923BE18B6003E67BF /* MDMethodTrace.m */; };
+		6DE75CFD23BE18B6003E67BF /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75CFC23BE18B6003E67BF /* a1a2-selectortramps-arm.s */; };
+		6DE75CFF23BE18B6003E67BF /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75CFE23BE18B6003E67BF /* a1a2-selectortramps-arm64.s */; };
+		6DE75D0123BE18B6003E67BF /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75D0023BE18B6003E67BF /* a1a2-selectortramps-i386.s */; };
+		6DE75D0323BE18B6003E67BF /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75D0223BE18B6003E67BF /* a1a2-selectortramps-x86_64.s */; };
+		6DE75D0523BE18B6003E67BF /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75D0423BE18B6003E67BF /* a2a3-selectortramps-arm.s */; };
+		6DE75D0723BE18B6003E67BF /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75D0623BE18B6003E67BF /* a2a3-selectortramps-i386.s */; };
+		6DE75D0923BE18B6003E67BF /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75D0823BE18B6003E67BF /* a2a3-selectortramps-x86_64.s */; };
+		6DE75D0B23BE18B6003E67BF /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE75D0A23BE18B6003E67BF /* OCMethodTrace.h */; };
+		6DE75D0D23BE18B6003E67BF /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75D0C23BE18B6003E67BF /* OCMethodTrace.m */; };
+		6DE75D0F23BE18B6003E67BF /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE75D0E23BE18B6003E67BF /* OCSelectorTrampolines.h */; };
+		6DE75D1123BE18B6003E67BF /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75D1023BE18B6003E67BF /* OCSelectorTrampolines.mm */; };
+		6DE75D1523BE18B6003E67BF /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE75D1423BE18B6003E67BF /* LLDBTools.h */; };
+		6DE75D1723BE18B6003E67BF /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75D1623BE18B6003E67BF /* LLDBTools.mm */; };
+		6DE75D1C23BE18B6003E67BF /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75D1B23BE18B6003E67BF /* AntiAntiDebug.m */; };
+		6DE75D1F23BE18B6003E67BF /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75D1E23BE18B6003E67BF /* fishhook.c */; };
+		6DE75D2123BE18B6003E67BF /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE75D2023BE18B6003E67BF /* fishhook.h */; };
+		6DE75D2323BE18B6003E67BF /* NetEaseCrackDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE75D2223BE18B6003E67BF /* NetEaseCrackDylib.h */; };
+		6DE75D2523BE18B6003E67BF /* NetEaseCrackDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE75D2423BE18B6003E67BF /* NetEaseCrackDylib.m */; };
+		6DE75D2F23BE18F2003E67BF /* neteasemusic.app in Resources */ = {isa = PBXBuildFile; fileRef = 6DE75D2E23BE18F2003E67BF /* neteasemusic.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DE75CE023BE18B6003E67BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DE75CC223BE18B6003E67BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DE75CDD23BE18B6003E67BF;
+			remoteInfo = NetEaseCrackDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6DE75CCA23BE18B6003E67BF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6DE75CDF23BE18B6003E67BF /* libNetEaseCrackDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D38DA6523BE1E64003A6C4E /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		6DE75CCD23BE18B6003E67BF /* NetEaseCrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetEaseCrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DE75CD023BE18B6003E67BF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		6DE75CD223BE18B6003E67BF /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
+		6DE75CD423BE18B6003E67BF /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MDConfig.plist; sourceTree = "<group>"; };
+		6DE75CD723BE18B6003E67BF /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; path = "put ipa or app here"; sourceTree = "<group>"; };
+		6DE75CD823BE18B6003E67BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DE75CDE23BE18B6003E67BF /* libNetEaseCrackDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libNetEaseCrackDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DE75CE323BE18B6003E67BF /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		6DE75CE523BE18B6003E67BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6DE75CE723BE18B6003E67BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6DE75CEB23BE18B6003E67BF /* NetEaseCrackDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = NetEaseCrackDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6DE75CEC23BE18B6003E67BF /* NetEaseCrackDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NetEaseCrackDylib.mm; sourceTree = "<group>"; };
+		6DE75CEF23BE18B6003E67BF /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		6DE75CF123BE18B6003E67BF /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		6DE75CF323BE18B6003E67BF /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		6DE75CF523BE18B6003E67BF /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		6DE75CF723BE18B6003E67BF /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		6DE75CF923BE18B6003E67BF /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		6DE75CFC23BE18B6003E67BF /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		6DE75CFE23BE18B6003E67BF /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		6DE75D0023BE18B6003E67BF /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		6DE75D0223BE18B6003E67BF /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		6DE75D0423BE18B6003E67BF /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		6DE75D0623BE18B6003E67BF /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		6DE75D0823BE18B6003E67BF /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		6DE75D0A23BE18B6003E67BF /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		6DE75D0C23BE18B6003E67BF /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		6DE75D0E23BE18B6003E67BF /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		6DE75D1023BE18B6003E67BF /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		6DE75D1223BE18B6003E67BF /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		6DE75D1423BE18B6003E67BF /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		6DE75D1623BE18B6003E67BF /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		6DE75D1923BE18B6003E67BF /* NetEaseCrackDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NetEaseCrackDylib-Prefix.pch"; path = "../NetEaseCrackDylib-Prefix.pch"; sourceTree = "<group>"; };
+		6DE75D1B23BE18B6003E67BF /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		6DE75D1E23BE18B6003E67BF /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		6DE75D2023BE18B6003E67BF /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		6DE75D2223BE18B6003E67BF /* NetEaseCrackDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetEaseCrackDylib.h; sourceTree = "<group>"; };
+		6DE75D2423BE18B6003E67BF /* NetEaseCrackDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetEaseCrackDylib.m; sourceTree = "<group>"; };
+		6DE75D2E23BE18F2003E67BF /* neteasemusic.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = neteasemusic.app; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DE75CC723BE18B6003E67BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE75CDB23BE18B6003E67BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE75CE423BE18B6003E67BF /* JavaScriptCore.framework in Frameworks */,
+				6DE75CE823BE18B6003E67BF /* UIKit.framework in Frameworks */,
+				6DE75CE623BE18B6003E67BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DE75CC123BE18B6003E67BF = {
+			isa = PBXGroup;
+			children = (
+				6DE75CCF23BE18B6003E67BF /* NetEaseCrack */,
+				6DE75CE923BE18B6003E67BF /* NetEaseCrackDylib */,
+				6DE75CE223BE18B6003E67BF /* Frameworks */,
+				6DE75CCE23BE18B6003E67BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DE75CCE23BE18B6003E67BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DE75CCD23BE18B6003E67BF /* NetEaseCrack.app */,
+				6DE75CDE23BE18B6003E67BF /* libNetEaseCrackDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DE75CCF23BE18B6003E67BF /* NetEaseCrack */ = {
+			isa = PBXGroup;
+			children = (
+				6DE75CD023BE18B6003E67BF /* icon.png */,
+				6DE75CD823BE18B6003E67BF /* Info.plist */,
+				6DE75CD123BE18B6003E67BF /* Scripts */,
+				6DE75CD323BE18B6003E67BF /* Config */,
+				6DE75CD623BE18B6003E67BF /* TargetApp */,
+				6D38DA6523BE1E64003A6C4E /* Images-2.xcassets */,
+			);
+			path = NetEaseCrack;
+			sourceTree = "<group>";
+		};
+		6DE75CD123BE18B6003E67BF /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				6DE75CD223BE18B6003E67BF /* quick-resign.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		6DE75CD323BE18B6003E67BF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6DE75CD423BE18B6003E67BF /* MDConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6DE75CD623BE18B6003E67BF /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				6DE75CD723BE18B6003E67BF /* put ipa or app here */,
+				6DE75D2E23BE18F2003E67BF /* neteasemusic.app */,
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		6DE75CE223BE18B6003E67BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DE75CE323BE18B6003E67BF /* JavaScriptCore.framework */,
+				6DE75CE523BE18B6003E67BF /* Foundation.framework */,
+				6DE75CE723BE18B6003E67BF /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DE75CE923BE18B6003E67BF /* NetEaseCrackDylib */ = {
+			isa = PBXGroup;
+			children = (
+				6DE75D2223BE18B6003E67BF /* NetEaseCrackDylib.h */,
+				6DE75D2423BE18B6003E67BF /* NetEaseCrackDylib.m */,
+				6DE75CEA23BE18B6003E67BF /* Logos */,
+				6DE75CEE23BE18B6003E67BF /* Config */,
+				6DE75CFB23BE18B6003E67BF /* Trace */,
+				6DE75D1323BE18B6003E67BF /* Tools */,
+				6DE75D1A23BE18B6003E67BF /* AntiAntiDebug */,
+				6DE75D1D23BE18B6003E67BF /* fishhook */,
+				6DE75D1823BE18B6003E67BF /* Supporting Files */,
+			);
+			path = NetEaseCrackDylib;
+			sourceTree = "<group>";
+		};
+		6DE75CEA23BE18B6003E67BF /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				6DE75CEB23BE18B6003E67BF /* NetEaseCrackDylib.xm */,
+				6DE75CEC23BE18B6003E67BF /* NetEaseCrackDylib.mm */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		6DE75CEE23BE18B6003E67BF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6DE75CEF23BE18B6003E67BF /* MDConfigManager.h */,
+				6DE75CF123BE18B6003E67BF /* MDConfigManager.m */,
+				6DE75CF323BE18B6003E67BF /* MDCycriptManager.h */,
+				6DE75CF523BE18B6003E67BF /* MDCycriptManager.m */,
+				6DE75CF723BE18B6003E67BF /* MDMethodTrace.h */,
+				6DE75CF923BE18B6003E67BF /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6DE75CFB23BE18B6003E67BF /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				6DE75CFC23BE18B6003E67BF /* a1a2-selectortramps-arm.s */,
+				6DE75CFE23BE18B6003E67BF /* a1a2-selectortramps-arm64.s */,
+				6DE75D0023BE18B6003E67BF /* a1a2-selectortramps-i386.s */,
+				6DE75D0223BE18B6003E67BF /* a1a2-selectortramps-x86_64.s */,
+				6DE75D0423BE18B6003E67BF /* a2a3-selectortramps-arm.s */,
+				6DE75D0623BE18B6003E67BF /* a2a3-selectortramps-i386.s */,
+				6DE75D0823BE18B6003E67BF /* a2a3-selectortramps-x86_64.s */,
+				6DE75D0A23BE18B6003E67BF /* OCMethodTrace.h */,
+				6DE75D0C23BE18B6003E67BF /* OCMethodTrace.m */,
+				6DE75D0E23BE18B6003E67BF /* OCSelectorTrampolines.h */,
+				6DE75D1023BE18B6003E67BF /* OCSelectorTrampolines.mm */,
+				6DE75D1223BE18B6003E67BF /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		6DE75D1323BE18B6003E67BF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6DE75D1423BE18B6003E67BF /* LLDBTools.h */,
+				6DE75D1623BE18B6003E67BF /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		6DE75D1823BE18B6003E67BF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DE75D1923BE18B6003E67BF /* NetEaseCrackDylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DE75D1A23BE18B6003E67BF /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				6DE75D1B23BE18B6003E67BF /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		6DE75D1D23BE18B6003E67BF /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				6DE75D1E23BE18B6003E67BF /* fishhook.c */,
+				6DE75D2023BE18B6003E67BF /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6DE75CDC23BE18B6003E67BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE75CF423BE18B6003E67BF /* MDCycriptManager.h in Headers */,
+				6DE75CF823BE18B6003E67BF /* MDMethodTrace.h in Headers */,
+				6DE75D2123BE18B6003E67BF /* fishhook.h in Headers */,
+				6DE75D1523BE18B6003E67BF /* LLDBTools.h in Headers */,
+				6DE75CF023BE18B6003E67BF /* MDConfigManager.h in Headers */,
+				6DE75D0F23BE18B6003E67BF /* OCSelectorTrampolines.h in Headers */,
+				6DE75D2323BE18B6003E67BF /* NetEaseCrackDylib.h in Headers */,
+				6DE75D0B23BE18B6003E67BF /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6DE75CCC23BE18B6003E67BF /* NetEaseCrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE75D2B23BE18B6003E67BF /* Build configuration list for PBXNativeTarget "NetEaseCrack" */;
+			buildPhases = (
+				6DE75CC623BE18B6003E67BF /* Sources */,
+				6DE75CC723BE18B6003E67BF /* Frameworks */,
+				6DE75CC823BE18B6003E67BF /* ShellScript */,
+				6DE75CC923BE18B6003E67BF /* Resources */,
+				6DE75CCA23BE18B6003E67BF /* CopyFiles */,
+				6DE75CCB23BE18B6003E67BF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DE75CE123BE18B6003E67BF /* PBXTargetDependency */,
+			);
+			name = NetEaseCrack;
+			productName = NetEaseCrack;
+			productReference = 6DE75CCD23BE18B6003E67BF /* NetEaseCrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DE75CDD23BE18B6003E67BF /* NetEaseCrackDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DE75D2823BE18B6003E67BF /* Build configuration list for PBXNativeTarget "NetEaseCrackDylib" */;
+			buildPhases = (
+				6DE75CD923BE18B6003E67BF /* ShellScript */,
+				6DE75CDA23BE18B6003E67BF /* Sources */,
+				6DE75CDB23BE18B6003E67BF /* Frameworks */,
+				6DE75CDC23BE18B6003E67BF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetEaseCrackDylib;
+			productName = NetEaseCrackDylib;
+			productReference = 6DE75CDE23BE18B6003E67BF /* libNetEaseCrackDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DE75CC223BE18B6003E67BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "排骨";
+				TargetAttributes = {
+					6DE75CCC23BE18B6003E67BF = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					6DE75CDD23BE18B6003E67BF = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 6DE75CC523BE18B6003E67BF /* Build configuration list for PBXProject "NetEaseCrack" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DE75CC123BE18B6003E67BF;
+			productRefGroup = 6DE75CCE23BE18B6003E67BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DE75CCC23BE18B6003E67BF /* NetEaseCrack */,
+				6DE75CDD23BE18B6003E67BF /* NetEaseCrackDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DE75CC923BE18B6003E67BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D38DA6623BE1E64003A6C4E /* Images-2.xcassets in Resources */,
+				6DE75CD523BE18B6003E67BF /* MDConfig.plist in Resources */,
+				6DE75D2F23BE18F2003E67BF /* neteasemusic.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DE75CC823BE18B6003E67BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		6DE75CCB23BE18B6003E67BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		6DE75CD923BE18B6003E67BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DE75CC623BE18B6003E67BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DE75CDA23BE18B6003E67BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE75CF623BE18B6003E67BF /* MDCycriptManager.m in Sources */,
+				6DE75D2523BE18B6003E67BF /* NetEaseCrackDylib.m in Sources */,
+				6DE75CFF23BE18B6003E67BF /* a1a2-selectortramps-arm64.s in Sources */,
+				6DE75CFD23BE18B6003E67BF /* a1a2-selectortramps-arm.s in Sources */,
+				6DE75D0323BE18B6003E67BF /* a1a2-selectortramps-x86_64.s in Sources */,
+				6DE75D0D23BE18B6003E67BF /* OCMethodTrace.m in Sources */,
+				6DE75CF223BE18B6003E67BF /* MDConfigManager.m in Sources */,
+				6DE75D1F23BE18B6003E67BF /* fishhook.c in Sources */,
+				6DE75D1C23BE18B6003E67BF /* AntiAntiDebug.m in Sources */,
+				6DE75D1123BE18B6003E67BF /* OCSelectorTrampolines.mm in Sources */,
+				6DE75D0123BE18B6003E67BF /* a1a2-selectortramps-i386.s in Sources */,
+				6DE75D0723BE18B6003E67BF /* a2a3-selectortramps-i386.s in Sources */,
+				6DE75D0523BE18B6003E67BF /* a2a3-selectortramps-arm.s in Sources */,
+				6DE75CED23BE18B6003E67BF /* NetEaseCrackDylib.mm in Sources */,
+				6DE75D1723BE18B6003E67BF /* LLDBTools.mm in Sources */,
+				6DE75D0923BE18B6003E67BF /* a2a3-selectortramps-x86_64.s in Sources */,
+				6DE75CFA23BE18B6003E67BF /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DE75CE123BE18B6003E67BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DE75CDD23BE18B6003E67BF /* NetEaseCrackDylib */;
+			targetProxy = 6DE75CE023BE18B6003E67BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6DE75D2623BE18B6003E67BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6DE75D2723BE18B6003E67BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DE75D2923BE18B6003E67BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NetEaseCrackDylib/NetEaseCrackDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libNetEaseCrackDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"NetEaseCrackDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		6DE75D2A23BE18B6003E67BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NetEaseCrackDylib/NetEaseCrackDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libNetEaseCrackDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"NetEaseCrackDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DE75D2C23BE18B6003E67BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = NetEaseCrack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = "网易云音乐";
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paigu.NetEaseCrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DE75D2D23BE18B6003E67BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = NetEaseCrack/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = "网易云音乐";
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paigu.NetEaseCrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DE75CC523BE18B6003E67BF /* Build configuration list for PBXProject "NetEaseCrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE75D2623BE18B6003E67BF /* Debug */,
+				6DE75D2723BE18B6003E67BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE75D2823BE18B6003E67BF /* Build configuration list for PBXNativeTarget "NetEaseCrackDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE75D2923BE18B6003E67BF /* Debug */,
+				6DE75D2A23BE18B6003E67BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DE75D2B23BE18B6003E67BF /* Build configuration list for PBXNativeTarget "NetEaseCrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DE75D2C23BE18B6003E67BF /* Debug */,
+				6DE75D2D23BE18B6003E67BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DE75CC223BE18B6003E67BF /* Project object */;
+}

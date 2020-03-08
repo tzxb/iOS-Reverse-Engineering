@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D9474C823AD10C9009AB3D3 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D9474C723AD10C9009AB3D3 /* MDConfig.plist */; };
+		6D9474D223AD10C9009AB3D3 /* libiftcrackDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6D9474D123AD10C9009AB3D3 /* libiftcrackDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6D9474D723AD10C9009AB3D3 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9474D623AD10C9009AB3D3 /* JavaScriptCore.framework */; };
+		6D9474D923AD10C9009AB3D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9474D823AD10C9009AB3D3 /* Foundation.framework */; };
+		6D9474DB23AD10C9009AB3D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9474DA23AD10C9009AB3D3 /* UIKit.framework */; };
+		6D9474E023AD10C9009AB3D3 /* iftcrackDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D9474DF23AD10C9009AB3D3 /* iftcrackDylib.mm */; };
+		6D9474E323AD10C9009AB3D3 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D9474E223AD10C9009AB3D3 /* MDConfigManager.h */; };
+		6D9474E523AD10C9009AB3D3 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9474E423AD10C9009AB3D3 /* MDConfigManager.m */; };
+		6D9474E723AD10C9009AB3D3 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D9474E623AD10C9009AB3D3 /* MDCycriptManager.h */; };
+		6D9474E923AD10C9009AB3D3 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9474E823AD10C9009AB3D3 /* MDCycriptManager.m */; };
+		6D9474EB23AD10C9009AB3D3 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D9474EA23AD10C9009AB3D3 /* MDMethodTrace.h */; };
+		6D9474ED23AD10C9009AB3D3 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9474EC23AD10C9009AB3D3 /* MDMethodTrace.m */; };
+		6D9474F023AD10C9009AB3D3 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 6D9474EF23AD10C9009AB3D3 /* a1a2-selectortramps-arm.s */; };
+		6D9474F223AD10C9009AB3D3 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 6D9474F123AD10C9009AB3D3 /* a1a2-selectortramps-arm64.s */; };
+		6D9474F423AD10C9009AB3D3 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 6D9474F323AD10C9009AB3D3 /* a1a2-selectortramps-i386.s */; };
+		6D9474F623AD10C9009AB3D3 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 6D9474F523AD10C9009AB3D3 /* a1a2-selectortramps-x86_64.s */; };
+		6D9474F823AD10C9009AB3D3 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 6D9474F723AD10C9009AB3D3 /* a2a3-selectortramps-arm.s */; };
+		6D9474FA23AD10C9009AB3D3 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 6D9474F923AD10C9009AB3D3 /* a2a3-selectortramps-i386.s */; };
+		6D9474FC23AD10C9009AB3D3 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 6D9474FB23AD10C9009AB3D3 /* a2a3-selectortramps-x86_64.s */; };
+		6D9474FE23AD10C9009AB3D3 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D9474FD23AD10C9009AB3D3 /* OCMethodTrace.h */; };
+		6D94750023AD10C9009AB3D3 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9474FF23AD10C9009AB3D3 /* OCMethodTrace.m */; };
+		6D94750223AD10C9009AB3D3 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D94750123AD10C9009AB3D3 /* OCSelectorTrampolines.h */; };
+		6D94750423AD10C9009AB3D3 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D94750323AD10C9009AB3D3 /* OCSelectorTrampolines.mm */; };
+		6D94750823AD10C9009AB3D3 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D94750723AD10C9009AB3D3 /* LLDBTools.h */; };
+		6D94750A23AD10C9009AB3D3 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D94750923AD10C9009AB3D3 /* LLDBTools.mm */; };
+		6D94750F23AD10C9009AB3D3 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D94750E23AD10C9009AB3D3 /* AntiAntiDebug.m */; };
+		6D94751223AD10C9009AB3D3 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D94751123AD10C9009AB3D3 /* fishhook.c */; };
+		6D94751423AD10C9009AB3D3 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D94751323AD10C9009AB3D3 /* fishhook.h */; };
+		6D94751623AD10C9009AB3D3 /* iftcrackDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D94751523AD10C9009AB3D3 /* iftcrackDylib.h */; };
+		6D94751823AD10C9009AB3D3 /* iftcrackDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D94751723AD10C9009AB3D3 /* iftcrackDylib.m */; };
+		6D94752223AD10E5009AB3D3 /* iFreeTime.app in Resources */ = {isa = PBXBuildFile; fileRef = 6D94752123AD10E5009AB3D3 /* iFreeTime.app */; };
+		6DDDEF8523AE38EF007BF9A9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D94752423AD1130009AB3D3 /* CloudKit.framework */; };
+		6DDDEF8823AE39AA007BF9A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DDDEF8723AE39AA007BF9A9 /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D9474D323AD10C9009AB3D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D9474B523AD10C9009AB3D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D9474D023AD10C9009AB3D3;
+			remoteInfo = iftcrackDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D9474BD23AD10C9009AB3D3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6D9474D223AD10C9009AB3D3 /* libiftcrackDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D9474C023AD10C9009AB3D3 /* iftcrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iftcrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D9474C323AD10C9009AB3D3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		6D9474C523AD10C9009AB3D3 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
+		6D9474C723AD10C9009AB3D3 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MDConfig.plist; sourceTree = "<group>"; };
+		6D9474CA23AD10C9009AB3D3 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; path = "put ipa or app here"; sourceTree = "<group>"; };
+		6D9474CB23AD10C9009AB3D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D9474D123AD10C9009AB3D3 /* libiftcrackDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libiftcrackDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D9474D623AD10C9009AB3D3 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		6D9474D823AD10C9009AB3D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6D9474DA23AD10C9009AB3D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6D9474DE23AD10C9009AB3D3 /* iftcrackDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = iftcrackDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6D9474DF23AD10C9009AB3D3 /* iftcrackDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = iftcrackDylib.mm; sourceTree = "<group>"; };
+		6D9474E223AD10C9009AB3D3 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		6D9474E423AD10C9009AB3D3 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		6D9474E623AD10C9009AB3D3 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		6D9474E823AD10C9009AB3D3 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		6D9474EA23AD10C9009AB3D3 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		6D9474EC23AD10C9009AB3D3 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		6D9474EF23AD10C9009AB3D3 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		6D9474F123AD10C9009AB3D3 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		6D9474F323AD10C9009AB3D3 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		6D9474F523AD10C9009AB3D3 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		6D9474F723AD10C9009AB3D3 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		6D9474F923AD10C9009AB3D3 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		6D9474FB23AD10C9009AB3D3 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		6D9474FD23AD10C9009AB3D3 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		6D9474FF23AD10C9009AB3D3 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		6D94750123AD10C9009AB3D3 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		6D94750323AD10C9009AB3D3 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		6D94750523AD10C9009AB3D3 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		6D94750723AD10C9009AB3D3 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		6D94750923AD10C9009AB3D3 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		6D94750C23AD10C9009AB3D3 /* iftcrackDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "iftcrackDylib-Prefix.pch"; path = "../iftcrackDylib-Prefix.pch"; sourceTree = "<group>"; };
+		6D94750E23AD10C9009AB3D3 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		6D94751123AD10C9009AB3D3 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		6D94751323AD10C9009AB3D3 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		6D94751523AD10C9009AB3D3 /* iftcrackDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iftcrackDylib.h; sourceTree = "<group>"; };
+		6D94751723AD10C9009AB3D3 /* iftcrackDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iftcrackDylib.m; sourceTree = "<group>"; };
+		6D94752123AD10E5009AB3D3 /* iFreeTime.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = iFreeTime.app; sourceTree = "<group>"; };
+		6D94752323AD1129009AB3D3 /* iftcrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iftcrack.entitlements; sourceTree = "<group>"; };
+		6D94752423AD1130009AB3D3 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		6DDDEF8723AE39AA007BF9A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D9474BA23AD10C9009AB3D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DDDEF8523AE38EF007BF9A9 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D9474CE23AD10C9009AB3D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D9474D723AD10C9009AB3D3 /* JavaScriptCore.framework in Frameworks */,
+				6D9474DB23AD10C9009AB3D3 /* UIKit.framework in Frameworks */,
+				6D9474D923AD10C9009AB3D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D9474B423AD10C9009AB3D3 = {
+			isa = PBXGroup;
+			children = (
+				6D9474C223AD10C9009AB3D3 /* iftcrack */,
+				6D9474DC23AD10C9009AB3D3 /* iftcrackDylib */,
+				6D9474D523AD10C9009AB3D3 /* Frameworks */,
+				6D9474C123AD10C9009AB3D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D9474C123AD10C9009AB3D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D9474C023AD10C9009AB3D3 /* iftcrack.app */,
+				6D9474D123AD10C9009AB3D3 /* libiftcrackDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D9474C223AD10C9009AB3D3 /* iftcrack */ = {
+			isa = PBXGroup;
+			children = (
+				6D94752323AD1129009AB3D3 /* iftcrack.entitlements */,
+				6D9474C323AD10C9009AB3D3 /* icon.png */,
+				6D9474CB23AD10C9009AB3D3 /* Info.plist */,
+				6D9474C423AD10C9009AB3D3 /* Scripts */,
+				6D9474C623AD10C9009AB3D3 /* Config */,
+				6D9474C923AD10C9009AB3D3 /* TargetApp */,
+				6DDDEF8723AE39AA007BF9A9 /* Images.xcassets */,
+			);
+			path = iftcrack;
+			sourceTree = "<group>";
+		};
+		6D9474C423AD10C9009AB3D3 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				6D9474C523AD10C9009AB3D3 /* quick-resign.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		6D9474C623AD10C9009AB3D3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6D9474C723AD10C9009AB3D3 /* MDConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6D9474C923AD10C9009AB3D3 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				6D9474CA23AD10C9009AB3D3 /* put ipa or app here */,
+				6D94752123AD10E5009AB3D3 /* iFreeTime.app */,
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		6D9474D523AD10C9009AB3D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D94752423AD1130009AB3D3 /* CloudKit.framework */,
+				6D9474D623AD10C9009AB3D3 /* JavaScriptCore.framework */,
+				6D9474D823AD10C9009AB3D3 /* Foundation.framework */,
+				6D9474DA23AD10C9009AB3D3 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D9474DC23AD10C9009AB3D3 /* iftcrackDylib */ = {
+			isa = PBXGroup;
+			children = (
+				6D94751523AD10C9009AB3D3 /* iftcrackDylib.h */,
+				6D94751723AD10C9009AB3D3 /* iftcrackDylib.m */,
+				6D9474DD23AD10C9009AB3D3 /* Logos */,
+				6D9474E123AD10C9009AB3D3 /* Config */,
+				6D9474EE23AD10C9009AB3D3 /* Trace */,
+				6D94750623AD10C9009AB3D3 /* Tools */,
+				6D94750D23AD10C9009AB3D3 /* AntiAntiDebug */,
+				6D94751023AD10C9009AB3D3 /* fishhook */,
+				6D94750B23AD10C9009AB3D3 /* Supporting Files */,
+			);
+			path = iftcrackDylib;
+			sourceTree = "<group>";
+		};
+		6D9474DD23AD10C9009AB3D3 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				6D9474DE23AD10C9009AB3D3 /* iftcrackDylib.xm */,
+				6D9474DF23AD10C9009AB3D3 /* iftcrackDylib.mm */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		6D9474E123AD10C9009AB3D3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6D9474E223AD10C9009AB3D3 /* MDConfigManager.h */,
+				6D9474E423AD10C9009AB3D3 /* MDConfigManager.m */,
+				6D9474E623AD10C9009AB3D3 /* MDCycriptManager.h */,
+				6D9474E823AD10C9009AB3D3 /* MDCycriptManager.m */,
+				6D9474EA23AD10C9009AB3D3 /* MDMethodTrace.h */,
+				6D9474EC23AD10C9009AB3D3 /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6D9474EE23AD10C9009AB3D3 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				6D9474EF23AD10C9009AB3D3 /* a1a2-selectortramps-arm.s */,
+				6D9474F123AD10C9009AB3D3 /* a1a2-selectortramps-arm64.s */,
+				6D9474F323AD10C9009AB3D3 /* a1a2-selectortramps-i386.s */,
+				6D9474F523AD10C9009AB3D3 /* a1a2-selectortramps-x86_64.s */,
+				6D9474F723AD10C9009AB3D3 /* a2a3-selectortramps-arm.s */,
+				6D9474F923AD10C9009AB3D3 /* a2a3-selectortramps-i386.s */,
+				6D9474FB23AD10C9009AB3D3 /* a2a3-selectortramps-x86_64.s */,
+				6D9474FD23AD10C9009AB3D3 /* OCMethodTrace.h */,
+				6D9474FF23AD10C9009AB3D3 /* OCMethodTrace.m */,
+				6D94750123AD10C9009AB3D3 /* OCSelectorTrampolines.h */,
+				6D94750323AD10C9009AB3D3 /* OCSelectorTrampolines.mm */,
+				6D94750523AD10C9009AB3D3 /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		6D94750623AD10C9009AB3D3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6D94750723AD10C9009AB3D3 /* LLDBTools.h */,
+				6D94750923AD10C9009AB3D3 /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		6D94750B23AD10C9009AB3D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D94750C23AD10C9009AB3D3 /* iftcrackDylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D94750D23AD10C9009AB3D3 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				6D94750E23AD10C9009AB3D3 /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		6D94751023AD10C9009AB3D3 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				6D94751123AD10C9009AB3D3 /* fishhook.c */,
+				6D94751323AD10C9009AB3D3 /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6D9474CF23AD10C9009AB3D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D94751623AD10C9009AB3D3 /* iftcrackDylib.h in Headers */,
+				6D9474E723AD10C9009AB3D3 /* MDCycriptManager.h in Headers */,
+				6D9474EB23AD10C9009AB3D3 /* MDMethodTrace.h in Headers */,
+				6D94751423AD10C9009AB3D3 /* fishhook.h in Headers */,
+				6D94750823AD10C9009AB3D3 /* LLDBTools.h in Headers */,
+				6D9474E323AD10C9009AB3D3 /* MDConfigManager.h in Headers */,
+				6D94750223AD10C9009AB3D3 /* OCSelectorTrampolines.h in Headers */,
+				6D9474FE23AD10C9009AB3D3 /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6D9474BF23AD10C9009AB3D3 /* iftcrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D94751E23AD10C9009AB3D3 /* Build configuration list for PBXNativeTarget "iftcrack" */;
+			buildPhases = (
+				6D9474B923AD10C9009AB3D3 /* Sources */,
+				6D9474BA23AD10C9009AB3D3 /* Frameworks */,
+				6D9474BB23AD10C9009AB3D3 /* ShellScript */,
+				6D9474BC23AD10C9009AB3D3 /* Resources */,
+				6D9474BD23AD10C9009AB3D3 /* CopyFiles */,
+				6D9474BE23AD10C9009AB3D3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D9474D423AD10C9009AB3D3 /* PBXTargetDependency */,
+			);
+			name = iftcrack;
+			productName = iftcrack;
+			productReference = 6D9474C023AD10C9009AB3D3 /* iftcrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D9474D023AD10C9009AB3D3 /* iftcrackDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D94751B23AD10C9009AB3D3 /* Build configuration list for PBXNativeTarget "iftcrackDylib" */;
+			buildPhases = (
+				6D9474CC23AD10C9009AB3D3 /* ShellScript */,
+				6D9474CD23AD10C9009AB3D3 /* Sources */,
+				6D9474CE23AD10C9009AB3D3 /* Frameworks */,
+				6D9474CF23AD10C9009AB3D3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iftcrackDylib;
+			productName = iftcrackDylib;
+			productReference = 6D9474D123AD10C9009AB3D3 /* libiftcrackDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D9474B523AD10C9009AB3D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "排骨";
+				TargetAttributes = {
+					6D9474BF23AD10C9009AB3D3 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					6D9474D023AD10C9009AB3D3 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 6D9474B823AD10C9009AB3D3 /* Build configuration list for PBXProject "iftcrack" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D9474B423AD10C9009AB3D3;
+			productRefGroup = 6D9474C123AD10C9009AB3D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D9474BF23AD10C9009AB3D3 /* iftcrack */,
+				6D9474D023AD10C9009AB3D3 /* iftcrackDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D9474BC23AD10C9009AB3D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DDDEF8823AE39AA007BF9A9 /* Images.xcassets in Resources */,
+				6D94752223AD10E5009AB3D3 /* iFreeTime.app in Resources */,
+				6D9474C823AD10C9009AB3D3 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D9474BB23AD10C9009AB3D3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh\n";
+		};
+		6D9474BE23AD10C9009AB3D3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign\n";
+		};
+		6D9474CC23AD10C9009AB3D3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D9474B923AD10C9009AB3D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D9474CD23AD10C9009AB3D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D94751823AD10C9009AB3D3 /* iftcrackDylib.m in Sources */,
+				6D9474E923AD10C9009AB3D3 /* MDCycriptManager.m in Sources */,
+				6D9474F223AD10C9009AB3D3 /* a1a2-selectortramps-arm64.s in Sources */,
+				6D9474F023AD10C9009AB3D3 /* a1a2-selectortramps-arm.s in Sources */,
+				6D9474F623AD10C9009AB3D3 /* a1a2-selectortramps-x86_64.s in Sources */,
+				6D94750023AD10C9009AB3D3 /* OCMethodTrace.m in Sources */,
+				6D9474E523AD10C9009AB3D3 /* MDConfigManager.m in Sources */,
+				6D94751223AD10C9009AB3D3 /* fishhook.c in Sources */,
+				6D94750F23AD10C9009AB3D3 /* AntiAntiDebug.m in Sources */,
+				6D94750423AD10C9009AB3D3 /* OCSelectorTrampolines.mm in Sources */,
+				6D9474F423AD10C9009AB3D3 /* a1a2-selectortramps-i386.s in Sources */,
+				6D9474FA23AD10C9009AB3D3 /* a2a3-selectortramps-i386.s in Sources */,
+				6D9474F823AD10C9009AB3D3 /* a2a3-selectortramps-arm.s in Sources */,
+				6D9474E023AD10C9009AB3D3 /* iftcrackDylib.mm in Sources */,
+				6D94750A23AD10C9009AB3D3 /* LLDBTools.mm in Sources */,
+				6D9474FC23AD10C9009AB3D3 /* a2a3-selectortramps-x86_64.s in Sources */,
+				6D9474ED23AD10C9009AB3D3 /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D9474D423AD10C9009AB3D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D9474D023AD10C9009AB3D3 /* iftcrackDylib */;
+			targetProxy = 6D9474D323AD10C9009AB3D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6D94751923AD10C9009AB3D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6D94751A23AD10C9009AB3D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D94751C23AD10C9009AB3D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iftcrackDylib/iftcrackDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libiftcrackDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"iftcrackDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		6D94751D23AD10C9009AB3D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iftcrackDylib/iftcrackDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libiftcrackDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"iftcrackDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6D94751F23AD10C9009AB3D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iftcrack/iftcrack.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = iftcrack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				MONKEYDEV_TARGET_APP = one.icc.iFreeTime;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paigu.iftcrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D94752023AD10C9009AB3D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iftcrack/iftcrack.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = iftcrack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				MONKEYDEV_TARGET_APP = one.icc.iFreeTime;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.paigu.iftcrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D9474B823AD10C9009AB3D3 /* Build configuration list for PBXProject "iftcrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D94751923AD10C9009AB3D3 /* Debug */,
+				6D94751A23AD10C9009AB3D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D94751B23AD10C9009AB3D3 /* Build configuration list for PBXNativeTarget "iftcrackDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D94751C23AD10C9009AB3D3 /* Debug */,
+				6D94751D23AD10C9009AB3D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D94751E23AD10C9009AB3D3 /* Build configuration list for PBXNativeTarget "iftcrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D94751F23AD10C9009AB3D3 /* Debug */,
+				6D94752023AD10C9009AB3D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D9474B523AD10C9009AB3D3 /* Project object */;
+}

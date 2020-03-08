@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SinfPaths</key>
+	<array>
+		<string>SC_Info/XMFilmTelevision.sinf</string>
+	</array>
+	<key>SinfReplicationPaths</key>
+	<array>
+		<string>Frameworks/BarrageRenderer.framework/SC_Info/BarrageRenderer.sinf</string>
+		<string>Frameworks/CocoaAsyncSocket.framework/SC_Info/CocoaAsyncSocket.sinf</string>
+		<string>Frameworks/KLCPopup.framework/SC_Info/KLCPopup.sinf</string>
+		<string>Frameworks/MRDLNA.framework/SC_Info/MRDLNA.sinf</string>
+		<string>Frameworks/SDCycleScrollView.framework/SC_Info/SDCycleScrollView.sinf</string>
+		<string>Frameworks/SDWebImage.framework/SC_Info/SDWebImage.sinf</string>
+		<string>Frameworks/SGQRCode.framework/SC_Info/SGQRCode.sinf</string>
+		<string>Frameworks/TOWebViewController.framework/SC_Info/TOWebViewController.sinf</string>
+		<string>SC_Info/XMFilmTelevision.sinf</string>
+	</array>
+</dict>
+</plist>

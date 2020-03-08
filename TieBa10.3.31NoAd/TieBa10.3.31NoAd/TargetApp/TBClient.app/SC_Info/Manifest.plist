@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SinfPaths</key>
+	<array>
+		<string>SC_Info/TBClient.sinf</string>
+	</array>
+	<key>SinfReplicationPaths</key>
+	<array>
+		<string>Frameworks/AipBase.framework/SC_Info/AipBase.sinf</string>
+		<string>Frameworks/App.framework/SC_Info/App.sinf</string>
+		<string>Frameworks/Flutter.framework/SC_Info/Flutter.sinf</string>
+		<string>Frameworks/IdcardQuality.framework/SC_Info/IdcardQuality.sinf</string>
+		<string>Frameworks/OPMKit.framework/SC_Info/OPMKit.sinf</string>
+		<string>Frameworks/ThirdPartyLibWraper.framework/SC_Info/ThirdPartyLibWraper.sinf</string>
+		<string>PlugIns/TBCPushNotificationExtension.appex/SC_Info/TBCPushNotificationExtension.sinf</string>
+		<string>SC_Info/TBClient.sinf</string>
+	</array>
+</dict>
+</plist>

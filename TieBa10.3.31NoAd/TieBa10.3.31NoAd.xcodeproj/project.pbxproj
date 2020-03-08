@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D17CD95239FC7EB00233F91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D17CD94239FC7EB00233F91 /* Images.xcassets */; };
+		6DF96EDF239FC15D00CD41E4 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6DF96EDE239FC15D00CD41E4 /* MDConfig.plist */; };
+		6DF96EE9239FC15D00CD41E4 /* libTieBa10.3.31NoAdDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6DF96EE8239FC15D00CD41E4 /* libTieBa10.3.31NoAdDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		6DF96EEE239FC15D00CD41E4 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF96EED239FC15D00CD41E4 /* JavaScriptCore.framework */; };
+		6DF96EF0239FC15D00CD41E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF96EEF239FC15D00CD41E4 /* Foundation.framework */; };
+		6DF96EF2239FC15D00CD41E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF96EF1239FC15D00CD41E4 /* UIKit.framework */; };
+		6DF96EF7239FC15D00CD41E4 /* TieBa10_3_31NoAdDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96EF6239FC15D00CD41E4 /* TieBa10_3_31NoAdDylib.mm */; };
+		6DF96EFA239FC15D00CD41E4 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF96EF9239FC15D00CD41E4 /* MDConfigManager.h */; };
+		6DF96EFC239FC15E00CD41E4 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96EFB239FC15E00CD41E4 /* MDConfigManager.m */; };
+		6DF96EFE239FC15E00CD41E4 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF96EFD239FC15E00CD41E4 /* MDCycriptManager.h */; };
+		6DF96F00239FC15E00CD41E4 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96EFF239FC15E00CD41E4 /* MDCycriptManager.m */; };
+		6DF96F02239FC15E00CD41E4 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF96F01239FC15E00CD41E4 /* MDMethodTrace.h */; };
+		6DF96F04239FC15E00CD41E4 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96F03239FC15E00CD41E4 /* MDMethodTrace.m */; };
+		6DF96F07239FC15E00CD41E4 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96F06239FC15E00CD41E4 /* a1a2-selectortramps-arm.s */; };
+		6DF96F09239FC15E00CD41E4 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96F08239FC15E00CD41E4 /* a1a2-selectortramps-arm64.s */; };
+		6DF96F0B239FC15E00CD41E4 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96F0A239FC15E00CD41E4 /* a1a2-selectortramps-i386.s */; };
+		6DF96F0D239FC15E00CD41E4 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96F0C239FC15E00CD41E4 /* a1a2-selectortramps-x86_64.s */; };
+		6DF96F0F239FC15E00CD41E4 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96F0E239FC15E00CD41E4 /* a2a3-selectortramps-arm.s */; };
+		6DF96F11239FC15E00CD41E4 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96F10239FC15E00CD41E4 /* a2a3-selectortramps-i386.s */; };
+		6DF96F13239FC15E00CD41E4 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96F12239FC15E00CD41E4 /* a2a3-selectortramps-x86_64.s */; };
+		6DF96F15239FC15E00CD41E4 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF96F14239FC15E00CD41E4 /* OCMethodTrace.h */; };
+		6DF96F17239FC15E00CD41E4 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96F16239FC15E00CD41E4 /* OCMethodTrace.m */; };
+		6DF96F19239FC15E00CD41E4 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF96F18239FC15E00CD41E4 /* OCSelectorTrampolines.h */; };
+		6DF96F1B239FC15E00CD41E4 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96F1A239FC15E00CD41E4 /* OCSelectorTrampolines.mm */; };
+		6DF96F1F239FC15E00CD41E4 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF96F1E239FC15E00CD41E4 /* LLDBTools.h */; };
+		6DF96F21239FC15E00CD41E4 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96F20239FC15E00CD41E4 /* LLDBTools.mm */; };
+		6DF96F26239FC15E00CD41E4 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96F25239FC15E00CD41E4 /* AntiAntiDebug.m */; };
+		6DF96F29239FC15E00CD41E4 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96F28239FC15E00CD41E4 /* fishhook.c */; };
+		6DF96F2B239FC15E00CD41E4 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF96F2A239FC15E00CD41E4 /* fishhook.h */; };
+		6DF96F2D239FC15E00CD41E4 /* TieBa10_3_31NoAdDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DF96F2C239FC15E00CD41E4 /* TieBa10_3_31NoAdDylib.h */; };
+		6DF96F2F239FC15E00CD41E4 /* TieBa10_3_31NoAdDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF96F2E239FC15E00CD41E4 /* TieBa10_3_31NoAdDylib.m */; };
+		6DF96F39239FC19300CD41E4 /* TBClient.app in Resources */ = {isa = PBXBuildFile; fileRef = 6DF96F38239FC19300CD41E4 /* TBClient.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DF96EEA239FC15D00CD41E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DF96ECC239FC15D00CD41E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DF96EE7239FC15D00CD41E4;
+			remoteInfo = TieBa10.3.31NoAdDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6DF96ED4239FC15D00CD41E4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6DF96EE9239FC15D00CD41E4 /* libTieBa10.3.31NoAdDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D17CD94239FC7EB00233F91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6DF96ED7239FC15D00CD41E4 /* 百度贴吧NoAd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百度贴吧NoAd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF96EDA239FC15D00CD41E4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		6DF96EDC239FC15D00CD41E4 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
+		6DF96EDE239FC15D00CD41E4 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MDConfig.plist; sourceTree = "<group>"; };
+		6DF96EE1239FC15D00CD41E4 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; path = "put ipa or app here"; sourceTree = "<group>"; };
+		6DF96EE2239FC15D00CD41E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DF96EE8239FC15D00CD41E4 /* libTieBa10.3.31NoAdDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libTieBa10.3.31NoAdDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF96EED239FC15D00CD41E4 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		6DF96EEF239FC15D00CD41E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6DF96EF1239FC15D00CD41E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6DF96EF5239FC15D00CD41E4 /* TieBa10_3_31NoAdDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = TieBa10_3_31NoAdDylib.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		6DF96EF6239FC15D00CD41E4 /* TieBa10_3_31NoAdDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TieBa10_3_31NoAdDylib.mm; sourceTree = "<group>"; };
+		6DF96EF9239FC15D00CD41E4 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		6DF96EFB239FC15E00CD41E4 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		6DF96EFD239FC15E00CD41E4 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		6DF96EFF239FC15E00CD41E4 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		6DF96F01239FC15E00CD41E4 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		6DF96F03239FC15E00CD41E4 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		6DF96F06239FC15E00CD41E4 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		6DF96F08239FC15E00CD41E4 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		6DF96F0A239FC15E00CD41E4 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		6DF96F0C239FC15E00CD41E4 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		6DF96F0E239FC15E00CD41E4 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		6DF96F10239FC15E00CD41E4 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		6DF96F12239FC15E00CD41E4 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		6DF96F14239FC15E00CD41E4 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		6DF96F16239FC15E00CD41E4 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		6DF96F18239FC15E00CD41E4 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		6DF96F1A239FC15E00CD41E4 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		6DF96F1C239FC15E00CD41E4 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		6DF96F1E239FC15E00CD41E4 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		6DF96F20239FC15E00CD41E4 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		6DF96F23239FC15E00CD41E4 /* TieBa10.3.31NoAdDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TieBa10.3.31NoAdDylib-Prefix.pch"; path = "../TieBa10.3.31NoAdDylib-Prefix.pch"; sourceTree = "<group>"; };
+		6DF96F25239FC15E00CD41E4 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		6DF96F28239FC15E00CD41E4 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		6DF96F2A239FC15E00CD41E4 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		6DF96F2C239FC15E00CD41E4 /* TieBa10_3_31NoAdDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TieBa10_3_31NoAdDylib.h; sourceTree = "<group>"; };
+		6DF96F2E239FC15E00CD41E4 /* TieBa10_3_31NoAdDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TieBa10_3_31NoAdDylib.m; sourceTree = "<group>"; };
+		6DF96F38239FC19300CD41E4 /* TBClient.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; path = TBClient.app; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DF96ED1239FC15D00CD41E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF96EE5239FC15D00CD41E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF96EEE239FC15D00CD41E4 /* JavaScriptCore.framework in Frameworks */,
+				6DF96EF2239FC15D00CD41E4 /* UIKit.framework in Frameworks */,
+				6DF96EF0239FC15D00CD41E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DF96ECB239FC15D00CD41E4 = {
+			isa = PBXGroup;
+			children = (
+				6DF96ED9239FC15D00CD41E4 /* TieBa10.3.31NoAd */,
+				6DF96EF3239FC15D00CD41E4 /* TieBa10.3.31NoAdDylib */,
+				6DF96EEC239FC15D00CD41E4 /* Frameworks */,
+				6DF96ED8239FC15D00CD41E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DF96ED8239FC15D00CD41E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DF96ED7239FC15D00CD41E4 /* 百度贴吧NoAd.app */,
+				6DF96EE8239FC15D00CD41E4 /* libTieBa10.3.31NoAdDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DF96ED9239FC15D00CD41E4 /* TieBa10.3.31NoAd */ = {
+			isa = PBXGroup;
+			children = (
+				6DF96EDA239FC15D00CD41E4 /* icon.png */,
+				6DF96EE2239FC15D00CD41E4 /* Info.plist */,
+				6DF96EDB239FC15D00CD41E4 /* Scripts */,
+				6DF96EDD239FC15D00CD41E4 /* Config */,
+				6DF96EE0239FC15D00CD41E4 /* TargetApp */,
+				6D17CD94239FC7EB00233F91 /* Images.xcassets */,
+			);
+			path = TieBa10.3.31NoAd;
+			sourceTree = "<group>";
+		};
+		6DF96EDB239FC15D00CD41E4 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				6DF96EDC239FC15D00CD41E4 /* quick-resign.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		6DF96EDD239FC15D00CD41E4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6DF96EDE239FC15D00CD41E4 /* MDConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6DF96EE0239FC15D00CD41E4 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				6DF96F38239FC19300CD41E4 /* TBClient.app */,
+				6DF96EE1239FC15D00CD41E4 /* put ipa or app here */,
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		6DF96EEC239FC15D00CD41E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DF96EED239FC15D00CD41E4 /* JavaScriptCore.framework */,
+				6DF96EEF239FC15D00CD41E4 /* Foundation.framework */,
+				6DF96EF1239FC15D00CD41E4 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DF96EF3239FC15D00CD41E4 /* TieBa10.3.31NoAdDylib */ = {
+			isa = PBXGroup;
+			children = (
+				6DF96F2C239FC15E00CD41E4 /* TieBa10_3_31NoAdDylib.h */,
+				6DF96F2E239FC15E00CD41E4 /* TieBa10_3_31NoAdDylib.m */,
+				6DF96EF4239FC15D00CD41E4 /* Logos */,
+				6DF96EF8239FC15D00CD41E4 /* Config */,
+				6DF96F05239FC15E00CD41E4 /* Trace */,
+				6DF96F1D239FC15E00CD41E4 /* Tools */,
+				6DF96F24239FC15E00CD41E4 /* AntiAntiDebug */,
+				6DF96F27239FC15E00CD41E4 /* fishhook */,
+				6DF96F22239FC15E00CD41E4 /* Supporting Files */,
+			);
+			path = TieBa10.3.31NoAdDylib;
+			sourceTree = "<group>";
+		};
+		6DF96EF4239FC15D00CD41E4 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				6DF96EF5239FC15D00CD41E4 /* TieBa10_3_31NoAdDylib.xm */,
+				6DF96EF6239FC15D00CD41E4 /* TieBa10_3_31NoAdDylib.mm */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		6DF96EF8239FC15D00CD41E4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				6DF96EF9239FC15D00CD41E4 /* MDConfigManager.h */,
+				6DF96EFB239FC15E00CD41E4 /* MDConfigManager.m */,
+				6DF96EFD239FC15E00CD41E4 /* MDCycriptManager.h */,
+				6DF96EFF239FC15E00CD41E4 /* MDCycriptManager.m */,
+				6DF96F01239FC15E00CD41E4 /* MDMethodTrace.h */,
+				6DF96F03239FC15E00CD41E4 /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		6DF96F05239FC15E00CD41E4 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				6DF96F06239FC15E00CD41E4 /* a1a2-selectortramps-arm.s */,
+				6DF96F08239FC15E00CD41E4 /* a1a2-selectortramps-arm64.s */,
+				6DF96F0A239FC15E00CD41E4 /* a1a2-selectortramps-i386.s */,
+				6DF96F0C239FC15E00CD41E4 /* a1a2-selectortramps-x86_64.s */,
+				6DF96F0E239FC15E00CD41E4 /* a2a3-selectortramps-arm.s */,
+				6DF96F10239FC15E00CD41E4 /* a2a3-selectortramps-i386.s */,
+				6DF96F12239FC15E00CD41E4 /* a2a3-selectortramps-x86_64.s */,
+				6DF96F14239FC15E00CD41E4 /* OCMethodTrace.h */,
+				6DF96F16239FC15E00CD41E4 /* OCMethodTrace.m */,
+				6DF96F18239FC15E00CD41E4 /* OCSelectorTrampolines.h */,
+				6DF96F1A239FC15E00CD41E4 /* OCSelectorTrampolines.mm */,
+				6DF96F1C239FC15E00CD41E4 /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		6DF96F1D239FC15E00CD41E4 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6DF96F1E239FC15E00CD41E4 /* LLDBTools.h */,
+				6DF96F20239FC15E00CD41E4 /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		6DF96F22239FC15E00CD41E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DF96F23239FC15E00CD41E4 /* TieBa10.3.31NoAdDylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DF96F24239FC15E00CD41E4 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				6DF96F25239FC15E00CD41E4 /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		6DF96F27239FC15E00CD41E4 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				6DF96F28239FC15E00CD41E4 /* fishhook.c */,
+				6DF96F2A239FC15E00CD41E4 /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6DF96EE6239FC15D00CD41E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF96EFE239FC15E00CD41E4 /* MDCycriptManager.h in Headers */,
+				6DF96F02239FC15E00CD41E4 /* MDMethodTrace.h in Headers */,
+				6DF96F2B239FC15E00CD41E4 /* fishhook.h in Headers */,
+				6DF96F1F239FC15E00CD41E4 /* LLDBTools.h in Headers */,
+				6DF96EFA239FC15D00CD41E4 /* MDConfigManager.h in Headers */,
+				6DF96F19239FC15E00CD41E4 /* OCSelectorTrampolines.h in Headers */,
+				6DF96F2D239FC15E00CD41E4 /* TieBa10_3_31NoAdDylib.h in Headers */,
+				6DF96F15239FC15E00CD41E4 /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6DF96ED6239FC15D00CD41E4 /* TieBa10.3.31NoAd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF96F35239FC15E00CD41E4 /* Build configuration list for PBXNativeTarget "TieBa10.3.31NoAd" */;
+			buildPhases = (
+				6DF96ED0239FC15D00CD41E4 /* Sources */,
+				6DF96ED1239FC15D00CD41E4 /* Frameworks */,
+				6DF96ED2239FC15D00CD41E4 /* ShellScript */,
+				6DF96ED3239FC15D00CD41E4 /* Resources */,
+				6DF96ED4239FC15D00CD41E4 /* CopyFiles */,
+				6DF96ED5239FC15D00CD41E4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DF96EEB239FC15D00CD41E4 /* PBXTargetDependency */,
+			);
+			name = TieBa10.3.31NoAd;
+			productName = TieBa10.3.31NoAd;
+			productReference = 6DF96ED7239FC15D00CD41E4 /* 百度贴吧NoAd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DF96EE7239FC15D00CD41E4 /* TieBa10.3.31NoAdDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF96F32239FC15E00CD41E4 /* Build configuration list for PBXNativeTarget "TieBa10.3.31NoAdDylib" */;
+			buildPhases = (
+				6DF96EE3239FC15D00CD41E4 /* ShellScript */,
+				6DF96EE4239FC15D00CD41E4 /* Sources */,
+				6DF96EE5239FC15D00CD41E4 /* Frameworks */,
+				6DF96EE6239FC15D00CD41E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TieBa10.3.31NoAdDylib;
+			productName = TieBa10.3.31NoAdDylib;
+			productReference = 6DF96EE8239FC15D00CD41E4 /* libTieBa10.3.31NoAdDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DF96ECC239FC15D00CD41E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "排骨";
+				TargetAttributes = {
+					6DF96ED6239FC15D00CD41E4 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					6DF96EE7239FC15D00CD41E4 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 6DF96ECF239FC15D00CD41E4 /* Build configuration list for PBXProject "TieBa10.3.31NoAd" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DF96ECB239FC15D00CD41E4;
+			productRefGroup = 6DF96ED8239FC15D00CD41E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DF96ED6239FC15D00CD41E4 /* TieBa10.3.31NoAd */,
+				6DF96EE7239FC15D00CD41E4 /* TieBa10.3.31NoAdDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DF96ED3239FC15D00CD41E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D17CD95239FC7EB00233F91 /* Images.xcassets in Resources */,
+				6DF96F39239FC19300CD41E4 /* TBClient.app in Resources */,
+				6DF96EDF239FC15D00CD41E4 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DF96ED2239FC15D00CD41E4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh\n";
+		};
+		6DF96ED5239FC15D00CD41E4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign\n";
+		};
+		6DF96EE3239FC15D00CD41E4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DF96ED0239FC15D00CD41E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DF96EE4239FC15D00CD41E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF96F00239FC15E00CD41E4 /* MDCycriptManager.m in Sources */,
+				6DF96F09239FC15E00CD41E4 /* a1a2-selectortramps-arm64.s in Sources */,
+				6DF96F07239FC15E00CD41E4 /* a1a2-selectortramps-arm.s in Sources */,
+				6DF96F0D239FC15E00CD41E4 /* a1a2-selectortramps-x86_64.s in Sources */,
+				6DF96F2F239FC15E00CD41E4 /* TieBa10_3_31NoAdDylib.m in Sources */,
+				6DF96F17239FC15E00CD41E4 /* OCMethodTrace.m in Sources */,
+				6DF96EFC239FC15E00CD41E4 /* MDConfigManager.m in Sources */,
+				6DF96F29239FC15E00CD41E4 /* fishhook.c in Sources */,
+				6DF96F26239FC15E00CD41E4 /* AntiAntiDebug.m in Sources */,
+				6DF96F1B239FC15E00CD41E4 /* OCSelectorTrampolines.mm in Sources */,
+				6DF96F0B239FC15E00CD41E4 /* a1a2-selectortramps-i386.s in Sources */,
+				6DF96F11239FC15E00CD41E4 /* a2a3-selectortramps-i386.s in Sources */,
+				6DF96F0F239FC15E00CD41E4 /* a2a3-selectortramps-arm.s in Sources */,
+				6DF96EF7239FC15D00CD41E4 /* TieBa10_3_31NoAdDylib.mm in Sources */,
+				6DF96F21239FC15E00CD41E4 /* LLDBTools.mm in Sources */,
+				6DF96F13239FC15E00CD41E4 /* a2a3-selectortramps-x86_64.s in Sources */,
+				6DF96F04239FC15E00CD41E4 /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DF96EEB239FC15D00CD41E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DF96EE7239FC15D00CD41E4 /* TieBa10.3.31NoAdDylib */;
+			targetProxy = 6DF96EEA239FC15D00CD41E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6DF96F30239FC15E00CD41E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6DF96F31239FC15E00CD41E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DF96F33239FC15E00CD41E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TieBa10.3.31NoAdDylib/TieBa10.3.31NoAdDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libTieBa10.3.31NoAdDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"TieBa10.3.31NoAdDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		6DF96F34239FC15E00CD41E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TieBa10.3.31NoAdDylib/TieBa10.3.31NoAdDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libTieBa10.3.31NoAdDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"TieBa10.3.31NoAdDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6DF96F36239FC15E00CD41E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TieBa10.3.31NoAd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = "去广告版";
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = com.baidu.tieba;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paigu.TieBa10-3-31NoAd";
+				PRODUCT_NAME = "百度贴吧NoAd";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6DF96F37239FC15E00CD41E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2SRNLG9873;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TieBa10.3.31NoAd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = "去广告版";
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = YES;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = com.baidu.tieba;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paigu.TieBa10-3-31NoAd";
+				PRODUCT_NAME = "百度贴吧NoAd";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DF96ECF239FC15D00CD41E4 /* Build configuration list for PBXProject "TieBa10.3.31NoAd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF96F30239FC15E00CD41E4 /* Debug */,
+				6DF96F31239FC15E00CD41E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DF96F32239FC15E00CD41E4 /* Build configuration list for PBXNativeTarget "TieBa10.3.31NoAdDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF96F33239FC15E00CD41E4 /* Debug */,
+				6DF96F34239FC15E00CD41E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DF96F35239FC15E00CD41E4 /* Build configuration list for PBXNativeTarget "TieBa10.3.31NoAd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF96F36239FC15E00CD41E4 /* Debug */,
+				6DF96F37239FC15E00CD41E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DF96ECC239FC15D00CD41E4 /* Project object */;
+}

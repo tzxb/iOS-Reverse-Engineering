@@ -1,0 +1,40 @@
+{
+  "bubbleDecorations": [
+    {
+      "bubbleImageName": "",
+      "id": 0,
+      "name": "默认",
+      "previewCoverName": "cm_comment_bubble_preview_0"
+    },
+    {
+      "bubbleImageName": "cm_comment_bubble_1",
+      "id": 101,
+      "name": "吟唱",
+      "previewCoverName": "cm_comment_bubble_preview_1"
+    },
+    {
+      "bubbleImageName": "cm_comment_bubble_2",
+      "id": 102,
+      "name": "独处",
+      "previewCoverName": "cm_comment_bubble_preview_2"
+    },
+    {
+      "bubbleImageName": "cm_comment_bubble_3",
+      "id": 103,
+      "name": "梦里",
+      "previewCoverName": "cm_comment_bubble_preview_3"
+    },
+    {
+      "bubbleImageName": "cm_comment_bubble_4",
+      "id": 104,
+      "name": "路上",
+      "previewCoverName": "cm_comment_bubble_preview_4"
+    },
+    {
+      "bubbleImageName": "cm_comment_bubble_5",
+      "id": 105,
+      "name": "欢聚",
+      "previewCoverName": "cm_comment_bubble_preview_5"
+    }
+  ]
+}
